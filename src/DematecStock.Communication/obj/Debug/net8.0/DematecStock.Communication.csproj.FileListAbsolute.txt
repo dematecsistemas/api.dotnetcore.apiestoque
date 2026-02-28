@@ -1,0 +1,11 @@
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Communication\bin\Debug\net8.0\DematecStock.Communication.deps.json
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Communication\bin\Debug\net8.0\DematecStock.Communication.dll
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Communication\bin\Debug\net8.0\DematecStock.Communication.pdb
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Communication\obj\Debug\net8.0\DematecStock.Communication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Communication\obj\Debug\net8.0\DematecStock.Communication.AssemblyInfoInputs.cache
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Communication\obj\Debug\net8.0\DematecStock.Communication.AssemblyInfo.cs
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Communication\obj\Debug\net8.0\DematecStock.Communication.csproj.CoreCompileInputs.cache
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Communication\obj\Debug\net8.0\DematecStock.Communication.dll
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Communication\obj\Debug\net8.0\refint\DematecStock.Communication.dll
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Communication\obj\Debug\net8.0\DematecStock.Communication.pdb
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Communication\obj\Debug\net8.0\ref\DematecStock.Communication.dll

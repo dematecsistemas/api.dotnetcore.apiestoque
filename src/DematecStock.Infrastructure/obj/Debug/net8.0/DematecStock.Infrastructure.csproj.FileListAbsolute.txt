@@ -1,0 +1,15 @@
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Infrastructure\obj\Debug\net8.0\DematecStock.Infrastructure.csproj.AssemblyReference.cache
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Infrastructure\obj\Debug\net8.0\DematecStock.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Infrastructure\obj\Debug\net8.0\DematecStock.Infrastructure.AssemblyInfoInputs.cache
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Infrastructure\obj\Debug\net8.0\DematecStock.Infrastructure.AssemblyInfo.cs
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Infrastructure\obj\Debug\net8.0\DematecStock.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Infrastructure\bin\Debug\net8.0\DematecStock.Infrastructure.deps.json
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Infrastructure\bin\Debug\net8.0\DematecStock.Infrastructure.dll
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Infrastructure\bin\Debug\net8.0\DematecStock.Infrastructure.pdb
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Infrastructure\bin\Debug\net8.0\DematecStock.Domain.dll
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Infrastructure\bin\Debug\net8.0\DematecStock.Domain.pdb
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Infrastructure\obj\Debug\net8.0\DematecS.74675A40.Up2Date
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Infrastructure\obj\Debug\net8.0\DematecStock.Infrastructure.dll
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Infrastructure\obj\Debug\net8.0\refint\DematecStock.Infrastructure.dll
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Infrastructure\obj\Debug\net8.0\DematecStock.Infrastructure.pdb
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Infrastructure\obj\Debug\net8.0\ref\DematecStock.Infrastructure.dll

@@ -1,0 +1,11 @@
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Exception\bin\Debug\net8.0\DematecStock.Exception.deps.json
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Exception\bin\Debug\net8.0\DematecStock.Exception.dll
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Exception\bin\Debug\net8.0\DematecStock.Exception.pdb
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Exception\obj\Debug\net8.0\DematecStock.Exception.GeneratedMSBuildEditorConfig.editorconfig
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Exception\obj\Debug\net8.0\DematecStock.Exception.AssemblyInfoInputs.cache
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Exception\obj\Debug\net8.0\DematecStock.Exception.AssemblyInfo.cs
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Exception\obj\Debug\net8.0\DematecStock.Exception.csproj.CoreCompileInputs.cache
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Exception\obj\Debug\net8.0\DematecStock.Exception.dll
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Exception\obj\Debug\net8.0\refint\DematecStock.Exception.dll
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Exception\obj\Debug\net8.0\DematecStock.Exception.pdb
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Exception\obj\Debug\net8.0\ref\DematecStock.Exception.dll
