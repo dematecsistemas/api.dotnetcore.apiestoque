@@ -1,10 +1,3 @@
-C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\DematecStock.Api.csproj.AssemblyReference.cache
-C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\rpswa.dswa.cache.json
-C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\DematecStock.Api.GeneratedMSBuildEditorConfig.editorconfig
-C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\DematecStock.Api.AssemblyInfoInputs.cache
-C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\DematecStock.Api.AssemblyInfo.cs
-C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\DematecStock.Api.csproj.CoreCompileInputs.cache
-C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\DematecStock.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\bin\Debug\net8.0\appsettings.Development.json
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\bin\Debug\net8.0\appsettings.json
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\bin\Debug\net8.0\DematecStock.Api.staticwebassets.endpoints.json
@@ -86,6 +79,15 @@ C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\bin\Debug\ne
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\bin\Debug\net8.0\DematecStock.Exception.pdb
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\bin\Debug\net8.0\DematecStock.Infrastructure.pdb
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\bin\Debug\net8.0\DematecStock.Domain.pdb
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\DematecStock.Api.csproj.AssemblyReference.cache
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\DematecStock.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\DematecStock.Api.AssemblyInfoInputs.cache
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\DematecStock.Api.AssemblyInfo.cs
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\DematecStock.Api.csproj.CoreCompileInputs.cache
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\DematecStock.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\DematecStock.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\DematecStock.Api.sourcelink.json
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
@@ -102,4 +104,3 @@ C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\ne
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\DematecStock.Api.pdb
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\DematecStock.Api.genruntimeconfig.cache
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\ref\DematecStock.Api.dll
-C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\DematecStock.Api.MvcApplicationPartsAssemblyInfo.cs

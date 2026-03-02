@@ -62,5 +62,62 @@
         "StatusCode": 404
       }
     ]
+  },
+  {
+    "ContainingType": "DematecStock.Api.Controllers.WarehouseLocationsController",
+    "Method": "Create",
+    "RelativePath": "api/warehouselocations",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DematecStock.Communication.Requests.WarehouseLocations.RequestWriteWarehouseLocationJson",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DematecStock.Communication.Responses.ResponseLocationsJson",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 201
+      }
+    ]
+  },
+  {
+    "ContainingType": "DematecStock.Api.Controllers.WarehouseLocationsController",
+    "Method": "Update",
+    "RelativePath": "api/warehouselocations/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "DematecStock.Communication.Requests.WarehouseLocations.RequestUpdateWarehouseLocationJson",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DematecStock.Communication.Responses.ResponseLocationsJson",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

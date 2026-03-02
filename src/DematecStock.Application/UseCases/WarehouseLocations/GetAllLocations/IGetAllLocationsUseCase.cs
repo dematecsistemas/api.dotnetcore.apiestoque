@@ -1,4 +1,5 @@
-﻿using DematecStock.Communication.Responses;
+﻿using DematecStock.Communication.Requests.WarehouseLocations;
+using DematecStock.Communication.Responses;
 
 namespace DematecStock.Application.UseCases.WarehouseLocations.GetAllLocations
 {
@@ -6,4 +7,5 @@ namespace DematecStock.Application.UseCases.WarehouseLocations.GetAllLocations
     {
         Task<List<ResponseLocationsJson>> Execute();
     }
+
 }

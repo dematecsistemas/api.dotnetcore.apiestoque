@@ -129,6 +129,111 @@
             }
           }
         }
+      },
+      "post": {
+        "tags": [
+          "WarehouseLocations"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequestWriteWarehouseLocationJson"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequestWriteWarehouseLocationJson"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequestWriteWarehouseLocationJson"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseLocationsJson"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseLocationsJson"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseLocationsJson"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/warehouselocations/{id}": {
+      "patch": {
+        "tags": [
+          "WarehouseLocations"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequestUpdateWarehouseLocationJson"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequestUpdateWarehouseLocationJson"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RequestUpdateWarehouseLocationJson"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseLocationsJson"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseLocationsJson"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseLocationsJson"
+                }
+              }
+            }
+          }
+        }
       }
     }
   },
@@ -142,6 +247,106 @@
             "nullable": true
           },
           "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RequestUpdateWarehouseLocationJson": {
+        "type": "object",
+        "properties": {
+          "locationName": {
+            "type": "string",
+            "nullable": true
+          },
+          "aisle": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "building": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "level": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "bin": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "isOccupied": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "string",
+            "nullable": true
+          },
+          "isMovementAllowed": {
+            "type": "string",
+            "nullable": true
+          },
+          "isAllowReplenishment": {
+            "type": "string",
+            "nullable": true
+          },
+          "isPickingLocation": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RequestWriteWarehouseLocationJson": {
+        "type": "object",
+        "properties": {
+          "idLocation": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "locationName": {
+            "type": "string",
+            "nullable": true
+          },
+          "aisle": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "building": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "level": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "bin": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isOccupied": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "string",
+            "nullable": true
+          },
+          "isMovementAllowed": {
+            "type": "string",
+            "nullable": true
+          },
+          "isAllowReplenishment": {
+            "type": "string",
+            "nullable": true
+          },
+          "isPickingLocation": {
             "type": "string",
             "nullable": true
           }

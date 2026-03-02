@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DematecStock.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44ab4fa9be95f6ca52021f77c07ce6735bf98737")]
 [assembly: System.Reflection.AssemblyProductAttribute("DematecStock.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DematecStock.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

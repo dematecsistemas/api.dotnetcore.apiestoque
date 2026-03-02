@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using DematecStock.Communication.Requests.WarehouseLocations;
 using DematecStock.Communication.Responses;
 using DematecStock.Domain.Entities;
 
@@ -14,7 +15,8 @@ namespace DematecStock.Application.AutoMapper
 
         private void RequestToEntity()
         {
-             // Exemplo: CreateMap<RequestRegisterExpenseJson, Expense>();
+            // Exemplo: CreateMap<RequestRegisterExpenseJson, Expense>();
+            CreateMap<RequestWriteWarehouseLocationJson, WarehouseLocations>();
         }
 
         private void EntityToResponse()

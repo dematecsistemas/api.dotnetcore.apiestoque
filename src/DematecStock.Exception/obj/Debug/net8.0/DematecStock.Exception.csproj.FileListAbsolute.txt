@@ -5,6 +5,7 @@ C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Exception\obj\De
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Exception\obj\Debug\net8.0\DematecStock.Exception.AssemblyInfoInputs.cache
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Exception\obj\Debug\net8.0\DematecStock.Exception.AssemblyInfo.cs
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Exception\obj\Debug\net8.0\DematecStock.Exception.csproj.CoreCompileInputs.cache
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Exception\obj\Debug\net8.0\DematecStock.Exception.sourcelink.json
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Exception\obj\Debug\net8.0\DematecStock.Exception.dll
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Exception\obj\Debug\net8.0\refint\DematecStock.Exception.dll
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Exception\obj\Debug\net8.0\DematecStock.Exception.pdb

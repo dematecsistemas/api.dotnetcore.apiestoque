@@ -39,6 +39,8 @@ namespace DematecStock.Infrastructure
             services.AddScoped<IWarehouseLocationsReadOnlyRepository, WarehouseLocationRepository>();
             services.AddScoped<IUserReadOnlyRepository, UserRepository>();
             services.AddScoped<IUserUpdateOnlyRepository, UserRepository>();
+            services.AddScoped<IWarehouseLocationsUpdateOnlyRepository, WarehouseLocationRepository>();
+            services.AddScoped<IWarehouseLocationsWriteOnlyRepository, WarehouseLocationRepository>();
 
         }
 

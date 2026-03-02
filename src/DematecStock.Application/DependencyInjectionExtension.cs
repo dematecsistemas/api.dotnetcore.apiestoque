@@ -1,5 +1,6 @@
 ﻿using DematecStock.Application.AutoMapper;
 using DematecStock.Application.UseCases.Login.DoLogin;
+using DematecStock.Application.UseCases.WarehouseLocations.CreateLocation;
 using DematecStock.Application.UseCases.WarehouseLocations.GetAllLocations;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -22,6 +23,7 @@ namespace DematecStock.Application
         {
             services.AddScoped<IGetAllLocationsUseCase, GetAllLocaticionsUseCase>();
             services.AddScoped<IDoLoginUseCase, DoLoginUseCase>();
+            services.AddScoped<ICreateLocationUseCase, CreateLocationUseCase>();
         }
     }
 }
