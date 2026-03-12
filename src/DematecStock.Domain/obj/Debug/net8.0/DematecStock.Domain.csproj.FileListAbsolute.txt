@@ -1,6 +1,7 @@
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Domain\bin\Debug\net8.0\DematecStock.Domain.deps.json
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Domain\bin\Debug\net8.0\DematecStock.Domain.dll
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Domain\bin\Debug\net8.0\DematecStock.Domain.pdb
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Domain\obj\Debug\net8.0\DematecStock.Domain.csproj.AssemblyReference.cache
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Domain\obj\Debug\net8.0\DematecStock.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Domain\obj\Debug\net8.0\DematecStock.Domain.AssemblyInfoInputs.cache
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Domain\obj\Debug\net8.0\DematecStock.Domain.AssemblyInfo.cs

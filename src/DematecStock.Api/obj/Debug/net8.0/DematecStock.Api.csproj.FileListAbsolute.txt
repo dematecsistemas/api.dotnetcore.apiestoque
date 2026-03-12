@@ -10,6 +10,8 @@ C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\bin\Debug\ne
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\bin\Debug\net8.0\Azure.Core.dll
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\bin\Debug\net8.0\Azure.Identity.dll
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
@@ -48,6 +50,7 @@ C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\bin\Debug\ne
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\bin\Debug\net8.0\System.Drawing.Common.dll
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\bin\Debug\net8.0\System.Formats.Asn1.dll
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\bin\Debug\net8.0\System.IO.Packaging.dll
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\bin\Debug\net8.0\System.IO.Pipelines.dll
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\bin\Debug\net8.0\System.Memory.Data.dll
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\bin\Debug\net8.0\System.Runtime.Caching.dll
@@ -97,10 +100,10 @@ C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\ne
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\staticwebassets.development.json
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\swae.build.ex.cache
-C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\DematecS.EE3EBCBE.Up2Date
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\DematecStock.Api.dll
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\refint\DematecStock.Api.dll
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\DematecStock.Api.pdb
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\DematecStock.Api.genruntimeconfig.cache
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\ref\DematecStock.Api.dll
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

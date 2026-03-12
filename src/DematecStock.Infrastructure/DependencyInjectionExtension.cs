@@ -1,5 +1,7 @@
 ﻿using BaseApi.Infrastructure.Repositories;
 using DematecStock.Domain.Repositories;
+using DematecStock.Domain.Repositories.PorductSearch;
+using DematecStock.Domain.Repositories.ProductAddress;
 using DematecStock.Domain.Repositories.Users;
 using DematecStock.Domain.Repositories.WarehouseLocations;
 using DematecStock.Domain.Security.Cryptography;
@@ -36,12 +38,16 @@ namespace DematecStock.Infrastructure
         private static void AddRepositories(IServiceCollection services)
         {
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+
             services.AddScoped<IWarehouseLocationsReadOnlyRepository, WarehouseLocationRepository>();
+            services.AddScoped<IWarehouseLocationsWriteOnlyRepository, WarehouseLocationRepository>();
+            services.AddScoped<IPatchWarehouseLocationRepository, WarehouseLocationRepository>();
+
             services.AddScoped<IUserReadOnlyRepository, UserRepository>();
             services.AddScoped<IUserUpdateOnlyRepository, UserRepository>();
-            services.AddScoped<IWarehouseLocationsUpdateOnlyRepository, WarehouseLocationRepository>();
-            services.AddScoped<IWarehouseLocationsWriteOnlyRepository, WarehouseLocationRepository>();
 
+            services.AddScoped<IProductAddressReadOnlyRepository, ProductAddressRepository>();
+            services.AddScoped<IProductSearchReadOnlyRepository, ProductSearchRepository>();
         }
 
         private static void AddDbContext(IServiceCollection services, IConfiguration configuration)

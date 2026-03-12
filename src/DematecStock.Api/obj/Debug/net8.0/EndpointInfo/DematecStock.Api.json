@@ -73,6 +73,255 @@
         }
       }
     },
+    "/api/productsearch": {
+      "get": {
+        "tags": [
+          "ProductSearch"
+        ],
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "page",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 1
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32",
+              "default": 20
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseProductSearchPagedJson"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseProductSearchPagedJson"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseProductSearchPagedJson"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseErrorJson"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseErrorJson"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseErrorJson"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/productslocations/{idLocation}": {
+      "get": {
+        "tags": [
+          "ProductsLocations"
+        ],
+        "parameters": [
+          {
+            "name": "idLocation",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseLocationProduct"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseLocationProduct"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseLocationProduct"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseErrorJson"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseErrorJson"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseErrorJson"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseErrorJson"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseErrorJson"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseErrorJson"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/productslocations/search": {
+      "get": {
+        "tags": [
+          "ProductsLocations"
+        ],
+        "parameters": [
+          {
+            "name": "idProduct",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "reference",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ean13code",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseProductLocations"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseProductLocations"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseProductLocations"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseErrorJson"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseErrorJson"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseErrorJson"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseErrorJson"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseErrorJson"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResponseErrorJson"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/warehouselocations": {
       "get": {
         "tags": [
@@ -197,24 +446,24 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/RequestUpdateWarehouseLocationJson"
+                "$ref": "#/components/schemas/PatchWarehouseLocationInput"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/RequestUpdateWarehouseLocationJson"
+                "$ref": "#/components/schemas/PatchWarehouseLocationInput"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/RequestUpdateWarehouseLocationJson"
+                "$ref": "#/components/schemas/PatchWarehouseLocationInput"
               }
             }
           }
         },
         "responses": {
-          "200": {
-            "description": "OK",
+          "204": {
+            "description": "No Content",
             "content": {
               "text/plain": {
                 "schema": {
@@ -239,47 +488,9 @@
   },
   "components": {
     "schemas": {
-      "RequestLoginJson": {
+      "PatchWarehouseLocationInput": {
         "type": "object",
         "properties": {
-          "username": {
-            "type": "string",
-            "nullable": true
-          },
-          "password": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "RequestUpdateWarehouseLocationJson": {
-        "type": "object",
-        "properties": {
-          "locationName": {
-            "type": "string",
-            "nullable": true
-          },
-          "aisle": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "building": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "level": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
-          "bin": {
-            "type": "integer",
-            "format": "int32",
-            "nullable": true
-          },
           "isOccupied": {
             "type": "string",
             "nullable": true
@@ -303,16 +514,26 @@
         },
         "additionalProperties": false
       },
+      "RequestLoginJson": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "RequestWriteWarehouseLocationJson": {
         "type": "object",
         "properties": {
           "idLocation": {
             "type": "integer",
             "format": "int32"
-          },
-          "locationName": {
-            "type": "string",
-            "nullable": true
           },
           "aisle": {
             "type": "integer",
@@ -361,6 +582,171 @@
             "items": {
               "type": "string"
             },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ResponseLocationProduct": {
+        "required": [
+          "aisle",
+          "allowsReplenishment",
+          "allowsStockMovement",
+          "bin",
+          "building",
+          "idLocation",
+          "isActive",
+          "isPickingLocation",
+          "level",
+          "locationName"
+        ],
+        "type": "object",
+        "properties": {
+          "idLocation": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "locationName": {
+            "type": "string",
+            "nullable": true
+          },
+          "aisle": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "building": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "level": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "bin": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isActive": {
+            "type": "string",
+            "nullable": true
+          },
+          "allowsStockMovement": {
+            "type": "string",
+            "nullable": true
+          },
+          "allowsReplenishment": {
+            "type": "string",
+            "nullable": true
+          },
+          "isPickingLocation": {
+            "type": "string",
+            "nullable": true
+          },
+          "storeProducts": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ResponseLocationWithProductsJson"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ResponseLocationWithProductsJson": {
+        "required": [
+          "idProduct"
+        ],
+        "type": "object",
+        "properties": {
+          "reference": {
+            "type": "string",
+            "nullable": true
+          },
+          "idProduct": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "onHandQuantity": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "productDescription": {
+            "type": "string",
+            "nullable": true
+          },
+          "idProductGroup": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "productGroupDescription": {
+            "type": "string",
+            "nullable": true
+          },
+          "idProductSubgroup": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "productSubgroupDescription": {
+            "type": "string",
+            "nullable": true
+          },
+          "idSupplier": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "supplierName": {
+            "type": "string",
+            "nullable": true
+          },
+          "isProductInactive": {
+            "type": "boolean"
+          },
+          "idNcm": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ncmNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "minQuantity": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "maxQuantity": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "productType": {
+            "type": "string",
+            "nullable": true
+          },
+          "ean13Code": {
+            "type": "string",
+            "nullable": true
+          },
+          "grossWeight": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "netWeight": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "packQuantity": {
+            "type": "number",
+            "format": "double",
             "nullable": true
           }
         },
@@ -429,6 +815,260 @@
           },
           "token": {
             "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ResponseProductLocations": {
+        "required": [
+          "idProduct"
+        ],
+        "type": "object",
+        "properties": {
+          "reference": {
+            "type": "string",
+            "nullable": true
+          },
+          "idProduct": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "productDescription": {
+            "type": "string",
+            "nullable": true
+          },
+          "idProductGroup": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "productGroupDescription": {
+            "type": "string",
+            "nullable": true
+          },
+          "idProductSubgroup": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "productSubgroupDescription": {
+            "type": "string",
+            "nullable": true
+          },
+          "idSupplier": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "supplierName": {
+            "type": "string",
+            "nullable": true
+          },
+          "isProductInactive": {
+            "type": "boolean"
+          },
+          "idNcm": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ncmNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "minQuantity": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "maxQuantity": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "productType": {
+            "type": "string",
+            "nullable": true
+          },
+          "ean13Code": {
+            "type": "string",
+            "nullable": true
+          },
+          "grossWeight": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "netWeight": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "packQuantity": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "storageBin": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ResponseProductWithLocations"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ResponseProductSearchItemJson": {
+        "type": "object",
+        "properties": {
+          "idProduct": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "productDescription": {
+            "type": "string",
+            "nullable": true
+          },
+          "baseUoM": {
+            "type": "string",
+            "nullable": true
+          },
+          "isProductInactive": {
+            "type": "boolean"
+          },
+          "ean13Code": {
+            "type": "string",
+            "nullable": true
+          },
+          "grossWeight": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "netWeight": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "height": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "width": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "length": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "idProductGroup": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "productGroupDescription": {
+            "type": "string",
+            "nullable": true
+          },
+          "idProductSubgroup": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "productSubgroupDescription": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ResponseProductSearchPagedJson": {
+        "type": "object",
+        "properties": {
+          "page": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageSize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ResponseProductSearchItemJson"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ResponseProductWithLocations": {
+        "required": [
+          "aisle",
+          "allowsReplenishment",
+          "allowsStockMovement",
+          "bin",
+          "building",
+          "idLocation",
+          "isActive",
+          "isPickingLocation",
+          "level",
+          "locationName"
+        ],
+        "type": "object",
+        "properties": {
+          "idLocation": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "locationName": {
+            "type": "string",
+            "nullable": true
+          },
+          "aisle": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "building": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "level": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "bin": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isActive": {
+            "type": "string",
+            "nullable": true
+          },
+          "allowsStockMovement": {
+            "type": "string",
+            "nullable": true
+          },
+          "allowsReplenishment": {
+            "type": "string",
+            "nullable": true
+          },
+          "isPickingLocation": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "onHandQuantity": {
+            "type": "number",
+            "format": "double",
             "nullable": true
           }
         },

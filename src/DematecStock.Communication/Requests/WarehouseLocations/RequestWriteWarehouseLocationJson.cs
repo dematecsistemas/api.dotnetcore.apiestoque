@@ -3,7 +3,7 @@
     public class RequestWriteWarehouseLocationJson
     {
         public int IdLocation { get; set; }
-        public string LocationName { get; set; }
+        //public string LocationName { get; set; }
         public int Aisle { get; set; }
         public int Building { get; set; }
         public int Level { get; set; }

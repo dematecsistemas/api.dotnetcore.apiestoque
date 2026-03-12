@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DematecStock.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eec7af77b7983909b34e51661b7dc806d0ca9668")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0021ffe1a3a5e9a123bd439429318c5aa14b7779")]
 [assembly: System.Reflection.AssemblyProductAttribute("DematecStock.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DematecStock.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

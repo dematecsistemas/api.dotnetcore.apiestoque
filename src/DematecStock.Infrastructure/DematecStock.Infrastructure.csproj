@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DematecStock.Domain\DematecStock.Domain.csproj" />
+    <ProjectReference Include="..\DematecStock.Exception\DematecStock.Exception.csproj" />
   </ItemGroup>
 
 </Project>

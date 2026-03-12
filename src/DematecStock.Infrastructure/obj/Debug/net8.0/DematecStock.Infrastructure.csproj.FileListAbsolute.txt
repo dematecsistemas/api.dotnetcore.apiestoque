@@ -2,7 +2,9 @@ C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Infrastructure\b
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Infrastructure\bin\Debug\net8.0\DematecStock.Infrastructure.dll
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Infrastructure\bin\Debug\net8.0\DematecStock.Infrastructure.pdb
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Infrastructure\bin\Debug\net8.0\DematecStock.Domain.dll
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Infrastructure\bin\Debug\net8.0\DematecStock.Exception.dll
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Infrastructure\bin\Debug\net8.0\DematecStock.Domain.pdb
+C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Infrastructure\bin\Debug\net8.0\DematecStock.Exception.pdb
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Infrastructure\obj\Debug\net8.0\DematecStock.Infrastructure.csproj.AssemblyReference.cache
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Infrastructure\obj\Debug\net8.0\DematecStock.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
 C:\Desenvolvimento\DotNet\DEMATEC\DematecStock\src\DematecStock.Infrastructure\obj\Debug\net8.0\DematecStock.Infrastructure.AssemblyInfoInputs.cache

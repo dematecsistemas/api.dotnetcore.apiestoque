@@ -1,5 +1,148 @@
 [
   {
+    "ContainingType": "DematecStock.Api.Controllers.ProductSearchController",
+    "Method": "Get",
+    "RelativePath": "api/productsearch",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "q",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DematecStock.Communication.Responses.ResponseProductSearchPagedJson",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "DematecStock.Communication.Responses.ResponseErrorJson",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DematecStock.Api.Controllers.ProductsLocations",
+    "Method": "GetStoregeProductsByLocation",
+    "RelativePath": "api/productslocations/{idLocation}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idLocation",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DematecStock.Communication.Responses.ResponseLocationProduct",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "DematecStock.Communication.Responses.ResponseErrorJson",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "DematecStock.Communication.Responses.ResponseErrorJson",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "DematecStock.Api.Controllers.ProductsLocations",
+    "Method": "Search",
+    "RelativePath": "api/productslocations/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProduct",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "reference",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ean13code",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DematecStock.Communication.Responses.ResponseProductLocations",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "DematecStock.Communication.Responses.ResponseErrorJson",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "DematecStock.Communication.Responses.ResponseErrorJson",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
     "ContainingType": "DematecStock.Api.Controllers.LoginController",
     "Method": "Login",
     "RelativePath": "api/v1/login",
@@ -91,7 +234,7 @@
   },
   {
     "ContainingType": "DematecStock.Api.Controllers.WarehouseLocationsController",
-    "Method": "Update",
+    "Method": "Patch",
     "RelativePath": "api/warehouselocations/{id}",
     "HttpMethod": "PATCH",
     "IsController": true,
@@ -103,8 +246,8 @@
         "IsRequired": true
       },
       {
-        "Name": "request",
-        "Type": "DematecStock.Communication.Requests.WarehouseLocations.RequestUpdateWarehouseLocationJson",
+        "Name": "input",
+        "Type": "DematecStock.Application.UseCases.WarehouseLocations.PatchLocation.PatchWarehouseLocationInput",
         "IsRequired": true
       }
     ],
@@ -116,7 +259,7 @@
           "application/json",
           "text/json"
         ],
-        "StatusCode": 200
+        "StatusCode": 204
       }
     ]
   }

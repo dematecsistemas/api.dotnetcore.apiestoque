@@ -1,6 +1,6 @@
-﻿using Azure;
-using DematecStock.Application.UseCases.WarehouseLocations.CreateLocation;
+﻿using DematecStock.Application.UseCases.WarehouseLocations.CreateLocation;
 using DematecStock.Application.UseCases.WarehouseLocations.GetAllLocations;
+using DematecStock.Application.UseCases.WarehouseLocations.PatchLocation;
 using DematecStock.Application.UseCases.WarehouseLocations.UpdateLocation;
 using DematecStock.Communication.Requests.WarehouseLocations;
 using DematecStock.Communication.Responses;
@@ -31,18 +31,18 @@ namespace DematecStock.Api.Controllers
             [FromBody] RequestWriteWarehouseLocationJson request)
         {
             await useCase.Execute(request);
-            return Ok();
+            return StatusCode(StatusCodes.Status201Created);
         }
 
         [HttpPatch("{id}")]
-        [ProducesResponseType(typeof(ResponseLocationsJson), StatusCodes.Status200OK)]
-        public async Task<IActionResult> Update(
-            [FromServices] IUpdateWarehouseLocationUseCase useCase,
+        [ProducesResponseType(typeof(ResponseLocationsJson), StatusCodes.Status204NoContent)]
+        public async Task<IActionResult> Patch(
+            [FromServices] IPatchWarehouseLocationUseCase useCase,
             [FromRoute] int id,
-            [FromBody] RequestUpdateWarehouseLocationJson request)
+            [FromBody] PatchWarehouseLocationInput input)
         {
-            var response = await useCase.Execute(id, request);
-            return Ok(response);
+            await useCase.ExecuteAsync(id, input);
+            return NoContent();
         }
     }
 }

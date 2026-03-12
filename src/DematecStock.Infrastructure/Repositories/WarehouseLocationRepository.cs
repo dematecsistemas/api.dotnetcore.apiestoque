@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DematecStock.Infrastructure.Repositories
 {
-    public class WarehouseLocationRepository : IWarehouseLocationsReadOnlyRepository, IWarehouseLocationsWriteOnlyRepository, IWarehouseLocationsUpdateOnlyRepository
+    public class WarehouseLocationRepository : IWarehouseLocationsReadOnlyRepository, IWarehouseLocationsWriteOnlyRepository, IPatchWarehouseLocationRepository
     {
         private readonly DematecStockDbContext _dbContext;
 
