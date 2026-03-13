@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DematecStock.Exception")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0021ffe1a3a5e9a123bd439429318c5aa14b7779")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+122f6ba9a07a4068f538d801c16c208832368f01")]
 [assembly: System.Reflection.AssemblyProductAttribute("DematecStock.Exception")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DematecStock.Exception")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

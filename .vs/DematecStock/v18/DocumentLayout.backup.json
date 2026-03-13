@@ -1,12 +1,109 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD91ACD-7877-4362-AB96-06B79A3840BC}|src\\DematecStock.Domain\\DematecStock.Domain.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\src\\dematecstock.domain\\dematecstock.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2DD91ACD-7877-4362-AB96-06B79A3840BC}|src\\DematecStock.Domain\\DematecStock.Domain.csproj|solutionrelative:src\\dematecstock.domain\\dematecstock.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{826A9EBE-7F5F-4600-9401-0A6EAF8A0FE1}|src\\DematecStock.Application\\DematecStock.Application.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\src\\dematecstock.application\\dematecstock.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{826A9EBE-7F5F-4600-9401-0A6EAF8A0FE1}|src\\DematecStock.Application\\DematecStock.Application.csproj|solutionrelative:src\\dematecstock.application\\dematecstock.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2E8F98A-2F44-4EAD-9072-8914EC64EAD7}|src\\DematecStock.Api\\DematecStock.Api.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\src\\dematecstock.api\\dematecstock.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F2E8F98A-2F44-4EAD-9072-8914EC64EAD7}|src\\DematecStock.Api\\DematecStock.Api.csproj|solutionrelative:src\\dematecstock.api\\dematecstock.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2E8F98A-2F44-4EAD-9072-8914EC64EAD7}|src\\DematecStock.Api\\DematecStock.Api.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\src\\dematecstock.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2E8F98A-2F44-4EAD-9072-8914EC64EAD7}|src\\DematecStock.Api\\DematecStock.Api.csproj|solutionrelative:src\\dematecstock.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2E8F98A-2F44-4EAD-9072-8914EC64EAD7}|src\\DematecStock.Api\\DematecStock.Api.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\src\\dematecstock.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F2E8F98A-2F44-4EAD-9072-8914EC64EAD7}|src\\DematecStock.Api\\DematecStock.Api.csproj|solutionrelative:src\\dematecstock.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Api\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "src\\DematecStock.Api\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Api\\Properties\\launchSettings.json",
+              "RelativeToolTip": "src\\DematecStock.Api\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAA8AAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-13T11:25:27.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Api\\Program.cs",
+              "RelativeDocumentMoniker": "src\\DematecStock.Api\\Program.cs",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Api\\Program.cs",
+              "RelativeToolTip": "src\\DematecStock.Api\\Program.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T11:25:27.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DematecStock.Domain",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Domain\\DematecStock.Domain.csproj",
+              "RelativeDocumentMoniker": "src\\DematecStock.Domain\\DematecStock.Domain.csproj",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Domain\\DematecStock.Domain.csproj",
+              "RelativeToolTip": "src\\DematecStock.Domain\\DematecStock.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-13T10:50:03.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DematecStock.Application",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Application\\DematecStock.Application.csproj",
+              "RelativeDocumentMoniker": "src\\DematecStock.Application\\DematecStock.Application.csproj",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Application\\DematecStock.Application.csproj",
+              "RelativeToolTip": "src\\DematecStock.Application\\DematecStock.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-13T10:50:03.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DematecStock.Api",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Api\\DematecStock.Api.csproj",
+              "RelativeDocumentMoniker": "src\\DematecStock.Api\\DematecStock.Api.csproj",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Api\\DematecStock.Api.csproj",
+              "RelativeToolTip": "src\\DematecStock.Api\\DematecStock.Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAgwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-13T10:50:02.979Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,891 @@
+{
+  "settings": {
+    "components": {
+      "code": true,
+      "binaries": false
+    },
+    "targetId": "net10.0",
+    "targetDisplayName": ".NETCoreApp,Version=v10.0"
+  },
+  "analysisStartTime": "2026-03-11T10:36:29.0557922Z",
+  "analysisEndTime": "2026-03-11T10:36:33.2817134Z",
+  "privacyModeHelpUrl": "https://go.microsoft.com/fwlink/?linkid=2270980",
+  "stats": {
+    "summary": {
+      "projects": 6,
+      "issues": 5,
+      "incidents": 26,
+      "effort": 26
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 14,
+        "Optional": 0,
+        "Potential": 12,
+        "Information": 0
+      },
+      "category": {
+        "Project": 6,
+        "NuGet": 5,
+        "Api": 15
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "src\\DematecStock.Api\\DematecStock.Api.csproj",
+      "startingProject": true,
+      "issues": 4,
+      "storyPoints": 10,
+      "properties": {
+        "appName": "DematecStock.Api",
+        "projectKind": "AspNetCore",
+        "frameworks": [
+          "net8.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 7,
+        "numberOfCodeFiles": 5,
+        "linesTotal": 267,
+        "linesOfCode": 247,
+        "totalApiScanned": 331,
+        "minLinesOfCodeToChange": 8,
+        "maxLinesOfCodeToChange": 8
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "86ccb071-a480-4712-9352-1bf5785bf080",
+          "ruleId": "NuGet.0002",
+          "projectPath": "src\\DematecStock.Api\\DematecStock.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.22\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.AspNetCore.Authentication.JwtBearer, and replace with new package Microsoft.AspNetCore.Authentication.JwtBearer 10.0.4",
+              "protected": "Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.22\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.AspNetCore.Authentication.JwtBearer, and replace with new package Microsoft.AspNetCore.Authentication.JwtBearer 10.0.4"
+            },
+            "kind": "File",
+            "path": "src\\DematecStock.Api\\DematecStock.Api.csproj",
+            "snippet": "Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.22\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.AspNetCore.Authentication.JwtBearer, and replace with new package Microsoft.AspNetCore.Authentication.JwtBearer 10.0.4",
+            "protectedSnippet": "Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.22\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.AspNetCore.Authentication.JwtBearer, and replace with new package Microsoft.AspNetCore.Authentication.JwtBearer 10.0.4",
+            "label": "Microsoft.AspNetCore.Authentication.JwtBearer 8.0.22",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Authentication.JwtBearer",
+              "PackageVersion": "8.0.22",
+              "PackageNewVersion": "10.0.4",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "bee3ffbb-0829-449c-b353-c21966f750d3",
+          "ruleId": "Project.0002",
+          "projectPath": "src\\DematecStock.Api\\DematecStock.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Estrutura de destino atual: net8.0\nEstrutura de destino recomendada: net10.0",
+              "protected": "Estrutura de destino atual: net8.0\nEstrutura de destino recomendada: net10.0"
+            },
+            "kind": "File",
+            "path": "src\\DematecStock.Api\\DematecStock.Api.csproj",
+            "snippet": "Estrutura de destino atual: net8.0\nEstrutura de destino recomendada: net10.0",
+            "protectedSnippet": "Estrutura de destino atual: net8.0\nEstrutura de destino recomendada: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net8.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        },
+        {
+          "incidentId": "948b86d5-2da6-4a7b-87e5-0becb5156fdb",
+          "ruleId": "Api.0001",
+          "description": "Breaking change: DynamicallyAccessedMembers annotation removed from trim-unsafe configuration APIs ",
+          "projectPath": "src\\DematecStock.Api\\DematecStock.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "config.TokenValidationParameters = new TokenValidationParameters\r\n    {\r\n        ValidateIssuer = false,\r\n        ValidateAudience = false,\r\n        ClockSkew = new TimeSpan(0),\r\n        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration.GetValue\u003Cstring\u003E(\u0022Settings:Jwt:SigningKey\u0022)!))\r\n    };",
+              "protected": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)"
+            },
+            "kind": "File",
+            "path": "src\\DematecStock.Api\\Program.cs",
+            "snippet": "config.TokenValidationParameters = new TokenValidationParameters\r\n    {\r\n        ValidateIssuer = false,\r\n        ValidateAudience = false,\r\n        ClockSkew = new TimeSpan(0),\r\n        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration.GetValue\u003Cstring\u003E(\u0022Settings:Jwt:SigningKey\u0022)!))\r\n    };",
+            "protectedSnippet": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)",
+            "label": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)",
+            "links": [
+              {
+                "title": "Documenta\u00E7\u00E3o da API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/extensions/10.0/dynamically-accessed-members-configuration.md",
+                "isCustom": false
+              }
+            ],
+            "line": 56,
+            "column": 4
+          }
+        },
+        {
+          "incidentId": "322a4e5f-8b6e-4ed7-b7a1-a9e2eed15017",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.6. Add package reference to Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.6",
+          "projectPath": "src\\DematecStock.Api\\DematecStock.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "config.TokenValidationParameters = new TokenValidationParameters\r\n    {\r\n        ValidateIssuer = false,\r\n        ValidateAudience = false,\r\n        ClockSkew = new TimeSpan(0),\r\n        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration.GetValue\u003Cstring\u003E(\u0022Settings:Jwt:SigningKey\u0022)!))\r\n    };",
+              "protected": "P:Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerOptions.TokenValidationParameters"
+            },
+            "kind": "File",
+            "path": "src\\DematecStock.Api\\Program.cs",
+            "snippet": "config.TokenValidationParameters = new TokenValidationParameters\r\n    {\r\n        ValidateIssuer = false,\r\n        ValidateAudience = false,\r\n        ClockSkew = new TimeSpan(0),\r\n        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration.GetValue\u003Cstring\u003E(\u0022Settings:Jwt:SigningKey\u0022)!))\r\n    };",
+            "protectedSnippet": "P:Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerOptions.TokenValidationParameters",
+            "label": "P:Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerOptions.TokenValidationParameters",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Authentication.JwtBearer",
+              "PackageNewVersion": "8.0.6"
+            },
+            "line": 56,
+            "column": 4
+          }
+        },
+        {
+          "incidentId": "a77255ac-5ffd-4604-92b7-5b39f62ba5c2",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.6. Add package reference to Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.6",
+          "projectPath": "src\\DematecStock.Api\\DematecStock.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "config.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;",
+              "protected": "T:Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults"
+            },
+            "kind": "File",
+            "path": "src\\DematecStock.Api\\Program.cs",
+            "snippet": "config.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults",
+            "label": "T:Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Authentication.JwtBearer",
+              "PackageNewVersion": "8.0.6"
+            },
+            "line": 53,
+            "column": 4
+          }
+        },
+        {
+          "incidentId": "6dc9d512-ea19-4e53-a629-0bc080f41935",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.6. Add package reference to Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.6",
+          "projectPath": "src\\DematecStock.Api\\DematecStock.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "config.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;",
+              "protected": "F:Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme"
+            },
+            "kind": "File",
+            "path": "src\\DematecStock.Api\\Program.cs",
+            "snippet": "config.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;",
+            "protectedSnippet": "F:Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme",
+            "label": "F:Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Authentication.JwtBearer",
+              "PackageNewVersion": "8.0.6"
+            },
+            "line": 53,
+            "column": 4
+          }
+        },
+        {
+          "incidentId": "cbb945ad-721e-47f2-82c3-b6ff6467e4ab",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.6. Add package reference to Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.6",
+          "projectPath": "src\\DematecStock.Api\\DematecStock.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "config.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;",
+              "protected": "T:Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults"
+            },
+            "kind": "File",
+            "path": "src\\DematecStock.Api\\Program.cs",
+            "snippet": "config.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults",
+            "label": "T:Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Authentication.JwtBearer",
+              "PackageNewVersion": "8.0.6"
+            },
+            "line": 52,
+            "column": 4
+          }
+        },
+        {
+          "incidentId": "3cf4c567-e56f-4928-a4aa-68f1c287eae7",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.6. Add package reference to Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.6",
+          "projectPath": "src\\DematecStock.Api\\DematecStock.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "config.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;",
+              "protected": "F:Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme"
+            },
+            "kind": "File",
+            "path": "src\\DematecStock.Api\\Program.cs",
+            "snippet": "config.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;",
+            "protectedSnippet": "F:Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme",
+            "label": "F:Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerDefaults.AuthenticationScheme",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Authentication.JwtBearer",
+              "PackageNewVersion": "8.0.6"
+            },
+            "line": 52,
+            "column": 4
+          }
+        },
+        {
+          "incidentId": "3901fda1-87c6-4165-95cd-bba34e43c6ce",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.6. Add package reference to Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.6",
+          "projectPath": "src\\DematecStock.Api\\DematecStock.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "builder.Services.AddAuthentication(config =\u003E\r\n{\r\n    config.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;\r\n    config.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;\r\n}).AddJwtBearer(config =\u003E\r\n{\r\n    config.TokenValidationParameters = new TokenValidationParameters\r\n    {\r\n        ValidateIssuer = false,\r\n        ValidateAudience = false,\r\n        ClockSkew = new TimeSpan(0),\r\n        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration.GetValue\u003Cstring\u003E(\u0022Settings:Jwt:SigningKey\u0022)!))\r\n    };\r\n});",
+              "protected": "T:Microsoft.Extensions.DependencyInjection.JwtBearerExtensions"
+            },
+            "kind": "File",
+            "path": "src\\DematecStock.Api\\Program.cs",
+            "snippet": "builder.Services.AddAuthentication(config =\u003E\r\n{\r\n    config.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;\r\n    config.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;\r\n}).AddJwtBearer(config =\u003E\r\n{\r\n    config.TokenValidationParameters = new TokenValidationParameters\r\n    {\r\n        ValidateIssuer = false,\r\n        ValidateAudience = false,\r\n        ClockSkew = new TimeSpan(0),\r\n        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration.GetValue\u003Cstring\u003E(\u0022Settings:Jwt:SigningKey\u0022)!))\r\n    };\r\n});",
+            "protectedSnippet": "T:Microsoft.Extensions.DependencyInjection.JwtBearerExtensions",
+            "label": "T:Microsoft.Extensions.DependencyInjection.JwtBearerExtensions",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Authentication.JwtBearer",
+              "PackageNewVersion": "8.0.6"
+            },
+            "line": 50,
+            "column": 0
+          }
+        },
+        {
+          "incidentId": "4be2ed9d-c011-4671-b276-31f80d210eb6",
+          "ruleId": "Api.0002",
+          "description": "API is available in package Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.6. Add package reference to Microsoft.AspNetCore.Authentication.JwtBearer, 8.0.6",
+          "projectPath": "src\\DematecStock.Api\\DematecStock.Api.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "builder.Services.AddAuthentication(config =\u003E\r\n{\r\n    config.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;\r\n    config.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;\r\n}).AddJwtBearer(config =\u003E\r\n{\r\n    config.TokenValidationParameters = new TokenValidationParameters\r\n    {\r\n        ValidateIssuer = false,\r\n        ValidateAudience = false,\r\n        ClockSkew = new TimeSpan(0),\r\n        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration.GetValue\u003Cstring\u003E(\u0022Settings:Jwt:SigningKey\u0022)!))\r\n    };\r\n});",
+              "protected": "M:Microsoft.Extensions.DependencyInjection.JwtBearerExtensions.AddJwtBearer(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.Action{Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerOptions})"
+            },
+            "kind": "File",
+            "path": "src\\DematecStock.Api\\Program.cs",
+            "snippet": "builder.Services.AddAuthentication(config =\u003E\r\n{\r\n    config.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;\r\n    config.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;\r\n}).AddJwtBearer(config =\u003E\r\n{\r\n    config.TokenValidationParameters = new TokenValidationParameters\r\n    {\r\n        ValidateIssuer = false,\r\n        ValidateAudience = false,\r\n        ClockSkew = new TimeSpan(0),\r\n        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration.GetValue\u003Cstring\u003E(\u0022Settings:Jwt:SigningKey\u0022)!))\r\n    };\r\n});",
+            "protectedSnippet": "M:Microsoft.Extensions.DependencyInjection.JwtBearerExtensions.AddJwtBearer(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.Action{Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerOptions})",
+            "label": "M:Microsoft.Extensions.DependencyInjection.JwtBearerExtensions.AddJwtBearer(Microsoft.AspNetCore.Authentication.AuthenticationBuilder,System.Action{Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerOptions})",
+            "properties": {
+              "PackageId": "Microsoft.AspNetCore.Authentication.JwtBearer",
+              "PackageNewVersion": "8.0.6"
+            },
+            "line": 50,
+            "column": 0
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "src\\DematecStock.Application\\DematecStock.Application.csproj",
+      "startingProject": true,
+      "issues": 3,
+      "storyPoints": 3,
+      "properties": {
+        "appName": "DematecStock.Application",
+        "projectKind": "ClassLibrary",
+        "frameworks": [
+          "net8.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 16,
+        "numberOfCodeFiles": 16,
+        "linesTotal": 386,
+        "linesOfCode": 386,
+        "totalApiScanned": 206,
+        "minLinesOfCodeToChange": 1,
+        "maxLinesOfCodeToChange": 1
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "35accfc0-2bb4-428a-bced-02d861893339",
+          "ruleId": "NuGet.0002",
+          "projectPath": "src\\DematecStock.Application\\DematecStock.Application.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Extensions.DependencyInjection, 9.0.11\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.Extensions.DependencyInjection, and replace with new package Microsoft.Extensions.DependencyInjection 10.0.4",
+              "protected": "Microsoft.Extensions.DependencyInjection, 9.0.11\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.Extensions.DependencyInjection, and replace with new package Microsoft.Extensions.DependencyInjection 10.0.4"
+            },
+            "kind": "File",
+            "path": "src\\DematecStock.Application\\DematecStock.Application.csproj",
+            "snippet": "Microsoft.Extensions.DependencyInjection, 9.0.11\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.Extensions.DependencyInjection, and replace with new package Microsoft.Extensions.DependencyInjection 10.0.4",
+            "protectedSnippet": "Microsoft.Extensions.DependencyInjection, 9.0.11\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.Extensions.DependencyInjection, and replace with new package Microsoft.Extensions.DependencyInjection 10.0.4",
+            "label": "Microsoft.Extensions.DependencyInjection 9.0.11",
+            "properties": {
+              "PackageId": "Microsoft.Extensions.DependencyInjection",
+              "PackageVersion": "9.0.11",
+              "PackageNewVersion": "10.0.4",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "590272b3-3baf-444b-b03b-af5140e4471e",
+          "ruleId": "Project.0002",
+          "projectPath": "src\\DematecStock.Application\\DematecStock.Application.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Estrutura de destino atual: net8.0\nEstrutura de destino recomendada: net10.0",
+              "protected": "Estrutura de destino atual: net8.0\nEstrutura de destino recomendada: net10.0"
+            },
+            "kind": "File",
+            "path": "src\\DematecStock.Application\\DematecStock.Application.csproj",
+            "snippet": "Estrutura de destino atual: net8.0\nEstrutura de destino recomendada: net10.0",
+            "protectedSnippet": "Estrutura de destino atual: net8.0\nEstrutura de destino recomendada: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net8.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        },
+        {
+          "incidentId": "9ea50ed5-3ad7-49fb-82d5-7ac4153ad76d",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "src\\DematecStock.Application\\DematecStock.Application.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "services.AddAutoMapper(typeof(AutoMapping));",
+              "protected": "T:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions"
+            },
+            "kind": "File",
+            "path": "src\\DematecStock.Application\\DependencyInjectionExtension.cs",
+            "snippet": "services.AddAutoMapper(typeof(AutoMapping));",
+            "protectedSnippet": "T:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions",
+            "label": "T:Microsoft.Extensions.DependencyInjection.ServiceCollectionExtensions",
+            "line": 22,
+            "column": 12
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "src\\DematecStock.Communication\\DematecStock.Communication.csproj",
+      "startingProject": true,
+      "issues": 1,
+      "storyPoints": 1,
+      "properties": {
+        "appName": "DematecStock.Communication",
+        "projectKind": "ClassLibrary",
+        "frameworks": [
+          "net8.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 11,
+        "numberOfCodeFiles": 11,
+        "linesTotal": 189,
+        "linesOfCode": 189,
+        "totalApiScanned": 412,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "b9ab8f6c-25f0-4d49-99f8-24179bddd7bb",
+          "ruleId": "Project.0002",
+          "projectPath": "src\\DematecStock.Communication\\DematecStock.Communication.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Estrutura de destino atual: net8.0\nEstrutura de destino recomendada: net10.0",
+              "protected": "Estrutura de destino atual: net8.0\nEstrutura de destino recomendada: net10.0"
+            },
+            "kind": "File",
+            "path": "src\\DematecStock.Communication\\DematecStock.Communication.csproj",
+            "snippet": "Estrutura de destino atual: net8.0\nEstrutura de destino recomendada: net10.0",
+            "protectedSnippet": "Estrutura de destino atual: net8.0\nEstrutura de destino recomendada: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net8.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "src\\DematecStock.Domain\\DematecStock.Domain.csproj",
+      "startingProject": true,
+      "issues": 1,
+      "storyPoints": 1,
+      "properties": {
+        "appName": "DematecStock.Domain",
+        "projectKind": "ClassLibrary",
+        "frameworks": [
+          "net8.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 16,
+        "numberOfCodeFiles": 16,
+        "linesTotal": 309,
+        "linesOfCode": 309,
+        "totalApiScanned": 570,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "15082309-5c5a-423d-9bf8-09f628661a6e",
+          "ruleId": "Project.0002",
+          "projectPath": "src\\DematecStock.Domain\\DematecStock.Domain.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Estrutura de destino atual: net8.0\nEstrutura de destino recomendada: net10.0",
+              "protected": "Estrutura de destino atual: net8.0\nEstrutura de destino recomendada: net10.0"
+            },
+            "kind": "File",
+            "path": "src\\DematecStock.Domain\\DematecStock.Domain.csproj",
+            "snippet": "Estrutura de destino atual: net8.0\nEstrutura de destino recomendada: net10.0",
+            "protectedSnippet": "Estrutura de destino atual: net8.0\nEstrutura de destino recomendada: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net8.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "src\\DematecStock.Exception\\DematecStock.Exception.csproj",
+      "startingProject": true,
+      "issues": 1,
+      "storyPoints": 1,
+      "properties": {
+        "appName": "DematecStock.Exception",
+        "projectKind": "ClassLibrary",
+        "frameworks": [
+          "net8.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 4,
+        "numberOfCodeFiles": 4,
+        "linesTotal": 72,
+        "linesOfCode": 72,
+        "totalApiScanned": 55,
+        "minLinesOfCodeToChange": 0,
+        "maxLinesOfCodeToChange": 0
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "6bac7302-29ec-4bab-8683-fdc4700e8b54",
+          "ruleId": "Project.0002",
+          "projectPath": "src\\DematecStock.Exception\\DematecStock.Exception.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Estrutura de destino atual: net8.0\nEstrutura de destino recomendada: net10.0",
+              "protected": "Estrutura de destino atual: net8.0\nEstrutura de destino recomendada: net10.0"
+            },
+            "kind": "File",
+            "path": "src\\DematecStock.Exception\\DematecStock.Exception.csproj",
+            "snippet": "Estrutura de destino atual: net8.0\nEstrutura de destino recomendada: net10.0",
+            "protectedSnippet": "Estrutura de destino atual: net8.0\nEstrutura de destino recomendada: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net8.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        }
+      ],
+      "features": []
+    },
+    {
+      "path": "src\\DematecStock.Infrastructure\\DematecStock.Infrastructure.csproj",
+      "startingProject": true,
+      "issues": 3,
+      "storyPoints": 10,
+      "properties": {
+        "appName": "DematecStock.Infrastructure",
+        "projectKind": "ClassLibrary",
+        "frameworks": [
+          "net8.0"
+        ],
+        "languages": [
+          "C#"
+        ],
+        "tools": [
+          "MSBuild"
+        ],
+        "isSdkStyle": true,
+        "numberOfFiles": 8,
+        "numberOfCodeFiles": 8,
+        "linesTotal": 448,
+        "linesOfCode": 448,
+        "totalApiScanned": 465,
+        "minLinesOfCodeToChange": 6,
+        "maxLinesOfCodeToChange": 6
+      },
+      "ruleInstances": [
+        {
+          "incidentId": "b9fceb6e-108a-449c-8f50-83823ee042ff",
+          "ruleId": "NuGet.0002",
+          "projectPath": "src\\DematecStock.Infrastructure\\DematecStock.Infrastructure.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore, 9.0.11\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.EntityFrameworkCore, and replace with new package Microsoft.EntityFrameworkCore 10.0.4",
+              "protected": "Microsoft.EntityFrameworkCore, 9.0.11\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.EntityFrameworkCore, and replace with new package Microsoft.EntityFrameworkCore 10.0.4"
+            },
+            "kind": "File",
+            "path": "src\\DematecStock.Infrastructure\\DematecStock.Infrastructure.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore, 9.0.11\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.EntityFrameworkCore, and replace with new package Microsoft.EntityFrameworkCore 10.0.4",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore, 9.0.11\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.EntityFrameworkCore, and replace with new package Microsoft.EntityFrameworkCore 10.0.4",
+            "label": "Microsoft.EntityFrameworkCore 9.0.11",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore",
+              "PackageVersion": "9.0.11",
+              "PackageNewVersion": "10.0.4",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "45763bcc-6c5d-4832-9df2-553dad93b7a0",
+          "ruleId": "NuGet.0002",
+          "projectPath": "src\\DematecStock.Infrastructure\\DematecStock.Infrastructure.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.EntityFrameworkCore.SqlServer, 9.0.11\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.EntityFrameworkCore.SqlServer, and replace with new package Microsoft.EntityFrameworkCore.SqlServer 10.0.4",
+              "protected": "Microsoft.EntityFrameworkCore.SqlServer, 9.0.11\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.EntityFrameworkCore.SqlServer, and replace with new package Microsoft.EntityFrameworkCore.SqlServer 10.0.4"
+            },
+            "kind": "File",
+            "path": "src\\DematecStock.Infrastructure\\DematecStock.Infrastructure.csproj",
+            "snippet": "Microsoft.EntityFrameworkCore.SqlServer, 9.0.11\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.EntityFrameworkCore.SqlServer, and replace with new package Microsoft.EntityFrameworkCore.SqlServer 10.0.4",
+            "protectedSnippet": "Microsoft.EntityFrameworkCore.SqlServer, 9.0.11\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.EntityFrameworkCore.SqlServer, and replace with new package Microsoft.EntityFrameworkCore.SqlServer 10.0.4",
+            "label": "Microsoft.EntityFrameworkCore.SqlServer 9.0.11",
+            "properties": {
+              "PackageId": "Microsoft.EntityFrameworkCore.SqlServer",
+              "PackageVersion": "9.0.11",
+              "PackageNewVersion": "10.0.4",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "52e5941d-f96a-42f1-875e-045820e0db06",
+          "ruleId": "NuGet.0002",
+          "projectPath": "src\\DematecStock.Infrastructure\\DematecStock.Infrastructure.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Extensions.Configuration.Binder, 10.0.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.Extensions.Configuration.Binder, and replace with new package Microsoft.Extensions.Configuration.Binder 10.0.4",
+              "protected": "Microsoft.Extensions.Configuration.Binder, 10.0.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.Extensions.Configuration.Binder, and replace with new package Microsoft.Extensions.Configuration.Binder 10.0.4"
+            },
+            "kind": "File",
+            "path": "src\\DematecStock.Infrastructure\\DematecStock.Infrastructure.csproj",
+            "snippet": "Microsoft.Extensions.Configuration.Binder, 10.0.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.Extensions.Configuration.Binder, and replace with new package Microsoft.Extensions.Configuration.Binder 10.0.4",
+            "protectedSnippet": "Microsoft.Extensions.Configuration.Binder, 10.0.1\n\nRecomenda\u00E7\u00E3o:\n\nRemove Microsoft.Extensions.Configuration.Binder, and replace with new package Microsoft.Extensions.Configuration.Binder 10.0.4",
+            "label": "Microsoft.Extensions.Configuration.Binder 10.0.1",
+            "properties": {
+              "PackageId": "Microsoft.Extensions.Configuration.Binder",
+              "PackageVersion": "10.0.1",
+              "PackageNewVersion": "10.0.4",
+              "PackageReplacements": null
+            }
+          }
+        },
+        {
+          "incidentId": "53ee1cb8-a03e-4c59-ac78-e1e2b5a51cbc",
+          "ruleId": "Project.0002",
+          "projectPath": "src\\DematecStock.Infrastructure\\DematecStock.Infrastructure.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Estrutura de destino atual: net8.0\nEstrutura de destino recomendada: net10.0",
+              "protected": "Estrutura de destino atual: net8.0\nEstrutura de destino recomendada: net10.0"
+            },
+            "kind": "File",
+            "path": "src\\DematecStock.Infrastructure\\DematecStock.Infrastructure.csproj",
+            "snippet": "Estrutura de destino atual: net8.0\nEstrutura de destino recomendada: net10.0",
+            "protectedSnippet": "Estrutura de destino atual: net8.0\nEstrutura de destino recomendada: net10.0",
+            "properties": {
+              "CurrentTargetFramework": "net8.0",
+              "RecommendedTargetFramework": "net10.0"
+            }
+          }
+        },
+        {
+          "incidentId": "94fec061-5a22-463a-96bd-f9feb44e351a",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "src\\DematecStock.Infrastructure\\DematecStock.Infrastructure.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "return tokenHandler.WriteToken(securityToken);",
+              "protected": "M:System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.WriteToken(Microsoft.IdentityModel.Tokens.SecurityToken)"
+            },
+            "kind": "File",
+            "path": "src\\DematecStock.Infrastructure\\Security\\Tokens\\JwtTokenGenerator.cs",
+            "snippet": "return tokenHandler.WriteToken(securityToken);",
+            "protectedSnippet": "M:System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.WriteToken(Microsoft.IdentityModel.Tokens.SecurityToken)",
+            "label": "M:System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.WriteToken(Microsoft.IdentityModel.Tokens.SecurityToken)",
+            "line": 40,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "23ac2874-d3dd-4a54-940e-6ba9ceb7894e",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "src\\DematecStock.Infrastructure\\DematecStock.Infrastructure.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var securityToken = tokenHandler.CreateToken(tokenDescriptor);",
+              "protected": "M:System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateToken(Microsoft.IdentityModel.Tokens.SecurityTokenDescriptor)"
+            },
+            "kind": "File",
+            "path": "src\\DematecStock.Infrastructure\\Security\\Tokens\\JwtTokenGenerator.cs",
+            "snippet": "var securityToken = tokenHandler.CreateToken(tokenDescriptor);",
+            "protectedSnippet": "M:System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateToken(Microsoft.IdentityModel.Tokens.SecurityTokenDescriptor)",
+            "label": "M:System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateToken(Microsoft.IdentityModel.Tokens.SecurityTokenDescriptor)",
+            "line": 38,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "988c5ec9-6c07-4d9a-8ea7-15a4bf68eea4",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "src\\DematecStock.Infrastructure\\DematecStock.Infrastructure.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var tokenHandler = new JwtSecurityTokenHandler();",
+              "protected": "T:System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler"
+            },
+            "kind": "File",
+            "path": "src\\DematecStock.Infrastructure\\Security\\Tokens\\JwtTokenGenerator.cs",
+            "snippet": "var tokenHandler = new JwtSecurityTokenHandler();",
+            "protectedSnippet": "T:System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler",
+            "label": "T:System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler",
+            "line": 36,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "f9647054-c992-4f9e-b490-348e54ee2aae",
+          "ruleId": "Api.0001",
+          "description": "API is unavailable in net8.0 ",
+          "projectPath": "src\\DematecStock.Infrastructure\\DematecStock.Infrastructure.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var tokenHandler = new JwtSecurityTokenHandler();",
+              "protected": "M:System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.#ctor"
+            },
+            "kind": "File",
+            "path": "src\\DematecStock.Infrastructure\\Security\\Tokens\\JwtTokenGenerator.cs",
+            "snippet": "var tokenHandler = new JwtSecurityTokenHandler();",
+            "protectedSnippet": "M:System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.#ctor",
+            "label": "M:System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.#ctor",
+            "line": 36,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "48b81c26-d788-446f-9b37-5aef72bfdef7",
+          "ruleId": "Api.0001",
+          "description": "Breaking change: DynamicallyAccessedMembers annotation removed from trim-unsafe configuration APIs ",
+          "projectPath": "src\\DematecStock.Infrastructure\\DematecStock.Infrastructure.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var signingKey = configuration.GetValue\u003Cstring\u003E(\u0022Settings:Jwt:SigningKey\u0022);",
+              "protected": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)"
+            },
+            "kind": "File",
+            "path": "src\\DematecStock.Infrastructure\\DependencyInjectionExtension.cs",
+            "snippet": "var signingKey = configuration.GetValue\u003Cstring\u003E(\u0022Settings:Jwt:SigningKey\u0022);",
+            "protectedSnippet": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)",
+            "label": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)",
+            "links": [
+              {
+                "title": "Documenta\u00E7\u00E3o da API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/extensions/10.0/dynamically-accessed-members-configuration.md",
+                "isCustom": false
+              }
+            ],
+            "line": 30,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "e6451117-ed9b-431a-88a1-d863416a0076",
+          "ruleId": "Api.0001",
+          "description": "Breaking change: DynamicallyAccessedMembers annotation removed from trim-unsafe configuration APIs ",
+          "projectPath": "src\\DematecStock.Infrastructure\\DematecStock.Infrastructure.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "var expirationTimeMinutes = configuration.GetValue\u003Cuint\u003E(\u0022Settings:Jwt:ExpiresMinutes\u0022);",
+              "protected": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)"
+            },
+            "kind": "File",
+            "path": "src\\DematecStock.Infrastructure\\DependencyInjectionExtension.cs",
+            "snippet": "var expirationTimeMinutes = configuration.GetValue\u003Cuint\u003E(\u0022Settings:Jwt:ExpiresMinutes\u0022);",
+            "protectedSnippet": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)",
+            "label": "M:Microsoft.Extensions.Configuration.ConfigurationBinder.GetValue\u0060\u00601(Microsoft.Extensions.Configuration.IConfiguration,System.String)",
+            "links": [
+              {
+                "title": "Documenta\u00E7\u00E3o da API",
+                "url": "https://github.com/dotnet/docs/blob/main/docs/core/compatibility/extensions/10.0/dynamically-accessed-members-configuration.md",
+                "isCustom": false
+              }
+            ],
+            "line": 29,
+            "column": 12
+          }
+        }
+      ],
+      "features": [
+        {
+          "featureId": "IdentityModel",
+          "incidents": [
+            "f9647054-c992-4f9e-b490-348e54ee2aae",
+            "988c5ec9-6c07-4d9a-8ea7-15a4bf68eea4",
+            "23ac2874-d3dd-4a54-940e-6ba9ceb7894e",
+            "94fec061-5a22-463a-96bd-f9feb44e351a"
+          ]
+        }
+      ]
+    }
+  ],
+  "rules": {
+    "Project.0002": {
+      "id": "Project.0002",
+      "isFeature": false,
+      "description": "A estrutura de destino do projeto precisa ser alterada para a nova estrutura de destino que voc\u00EA selecionou para essa atualiza\u00E7\u00E3o.\n\nDurante a atualiza\u00E7\u00E3o, a estrutura de destino ser\u00E1 ajustada para a plataforma correspondente, quando aplic\u00E1vel. Em alguns casos, o projeto ter\u00E1 v\u00E1rias estruturas de destino ap\u00F3s\u00A0a atualiza\u00E7\u00E3o se estiver usando recursos que agora t\u00EAm suas pr\u00F3prias plataformas nas estruturas modernas do .NET (Windows, iOS, Android etc.).",
+      "label": "As estruturas de destino do projeto precisam ser alteradas",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Vis\u00E3o geral da portabilidade do .NET Framework para o .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": "SDKs do projeto .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0002": {
+      "id": "NuGet.0002",
+      "isFeature": false,
+      "description": "A atualiza\u00E7\u00E3o do pacote NuGet \u00E9 recomendada para a estrutura de destino selecionada.\n\nRecomenda-se que os pacotes padr\u00E3o do .NET tenham vers\u00F5es correspondentes \u00E0 vers\u00E3o do .NET que o projeto se destina.\n\nAlguns outros pacotes tamb\u00E9m s\u00E3o conhecidos por funcionar melhor para as estruturas de destino selecionadas.",
+      "label": "Recomenda-se a atualiza\u00E7\u00E3o do pacote NuGet",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262530",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0001": {
+      "id": "Api.0001",
+      "isFeature": false,
+      "description": "API is binary incompatible for selected .NET version: affects existing binaries, often requiring recompilation, because the API has changed in a way that prevents older binaries from loading or executing.",
+      "label": "Binary incompatible for selected .NET version",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Altera\u00E7\u00F5es interruptivas no .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262679",
+          "isCustom": false
+        }
+      ]
+    },
+    "IdentityModel": {
+      "id": "IdentityModel",
+      "isFeature": false,
+      "description": "Windows Identity Foundation (WIF), SAML, and claims-based authentication APIs that have been replaced by modern identity libraries. WIF was the original identity framework for .NET Framework. Migrate to Microsoft.IdentityModel.* packages (modern identity stack).",
+      "label": "IdentityModel \u0026 Claims-based Security",
+      "severity": "Mandatory",
+      "effort": 4,
+      "links": [
+        {
+          "title": "Microsoft.IdentityModel packages",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2341614",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0002": {
+      "id": "Api.0002",
+      "isFeature": false,
+      "description": "API is source incompatible for selected .NET version: requires code changes to compile successfully when targeting a new version, such as removing obsolete APIs or changing method signatures.",
+      "label": "Source incompatible for selected .NET version",
+      "severity": "Potential",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Altera\u00E7\u00F5es interruptivas no .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262679",
+          "isCustom": false
+        }
+      ]
+    }
+  }
+}

@@ -15,8 +15,8 @@ namespace DematecStock.Application.UseCases.ProductSearch.GetProductSearch
         public async Task<ResponseProductSearchPagedJson> Execute(string? q, int page, int pageSize, CancellationToken ct)
         {
             page = Math.Max(1, page);
-            pageSize = pageSize <= 0 ? 20 : pageSize;
-            pageSize = Math.Min(pageSize, 20);
+            pageSize = pageSize <= 0 ? 50 : pageSize;
+            pageSize = Math.Min(pageSize, 50);
 
             var rows = await _repository.SearchAsync(q?.Trim(), page, pageSize, ct);
 
