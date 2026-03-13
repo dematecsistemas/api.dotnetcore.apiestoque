@@ -32,28 +32,27 @@ namespace DematecStock.Infrastructure.Repositories
 				throw new NotFoundException("Localização não encontrada.");
 			}
 
-
 			var productsStoredHeader = productsStored.First();
 
 			var locationQueryResult = new LocationQueryResult
 			{
-				IdLocation = productsStoredHeader.IdLocation,
-				LocationName = productsStoredHeader.LocationName,
-				Aisle = productsStoredHeader.Aisle,
-				Building = productsStoredHeader.Building,
-				Level = productsStoredHeader.Level,
-				Bin = productsStoredHeader.Bin,
-				IsActive = productsStoredHeader.IsActive,
-				AllowsReplenishment = productsStoredHeader.AllowsReplenishment,
-				AllowsStockMovement = productsStoredHeader.AllowsStockMovement,
-				IsPickingLocation = productsStoredHeader.IsPickingLocation,
+				IdLocation = productsStoredHeader.IdLocation ?? 0,
+				LocationName = productsStoredHeader.LocationName ?? string.Empty,
+				Aisle = productsStoredHeader.Aisle ?? 0,
+				Building = productsStoredHeader.Building ?? 0,
+				Level = productsStoredHeader.Level ?? 0,
+				Bin = productsStoredHeader.Bin ?? 0,
+				IsActive = productsStoredHeader.IsActive ?? string.Empty,
+				AllowsReplenishment = productsStoredHeader.AllowsReplenishment ?? string.Empty,
+				AllowsStockMovement = productsStoredHeader.AllowsStockMovement ?? string.Empty,
+				IsPickingLocation = productsStoredHeader.IsPickingLocation ?? string.Empty,
 
 				StoreProducts = productsStored.Select(product => new LocationWithProductsQueryResult
 				{
 					IdProduct = product.IdProduct,
 					ProductDescription = product.ProductDescription,
 					Reference = product.Reference,
-					CreatedDate = product.CreatedDate,
+					CreatedDate = product.CreatedDate ?? default,
 					IdProductGroup = product.IdProductGroup,
 					ProductGroupDescription = product.ProductGroupDescription,
 					IdProductSubgroup = product.IdProductSubgroup,
@@ -81,10 +80,8 @@ namespace DematecStock.Infrastructure.Repositories
 		{
 			var query = BaseQuery();
 
-
 			if (idProduct.HasValue)
 				query = query.Where(x => x.IdProduct == idProduct.Value);
-
 
 			if (!string.IsNullOrWhiteSpace(reference))
 				query = query.Where(x => x.Reference == reference);
@@ -93,7 +90,6 @@ namespace DematecStock.Infrastructure.Repositories
 				query = query.Where(x => x.Ean13Code == ean13);
 
 			var rows = await query.ToListAsync();
-
 
 			if (!rows.Any())
 			{
@@ -126,21 +122,23 @@ namespace DematecStock.Infrastructure.Repositories
 				GrossWeight = productsStoredHeader.GrossWeight,
 				NetWeight = productsStoredHeader.NetWeight,
 
-				StorageBin = rows.Select(productStored => new ProductWithLocationsQueryResult
-				{
-					IdLocation = productStored.IdLocation,
-					LocationName = productStored.LocationName,
-					Aisle = productStored.Aisle,
-					Building = productStored.Building,
-					Level = productStored.Level,
-					Bin = productStored.Bin,
-					IsActive = productStored.IsActive,
-					AllowsReplenishment = productStored.AllowsReplenishment,
-					AllowsStockMovement = productStored.AllowsStockMovement,
-					IsPickingLocation = productStored.IsPickingLocation,
-					CreatedDate = productStored.CreatedDate,
-					OnHandQuantity = productStored.OnHandQuantity
-				}).ToList()
+				StorageBin = rows
+					.Where(productStored => productStored.IdLocation.HasValue)
+					.Select(productStored => new ProductWithLocationsQueryResult
+					{
+						IdLocation = productStored.IdLocation!.Value,
+						LocationName = productStored.LocationName ?? string.Empty,
+						Aisle = productStored.Aisle ?? 0,
+						Building = productStored.Building ?? 0,
+						Level = productStored.Level ?? 0,
+						Bin = productStored.Bin ?? 0,
+						IsActive = productStored.IsActive ?? string.Empty,
+						AllowsReplenishment = productStored.AllowsReplenishment ?? string.Empty,
+						AllowsStockMovement = productStored.AllowsStockMovement ?? string.Empty,
+						IsPickingLocation = productStored.IsPickingLocation ?? string.Empty,
+						CreatedDate = productStored.CreatedDate ?? default,
+						OnHandQuantity = productStored.OnHandQuantity
+					}).ToList()
 			};
 			return productsQueryResult;
 		}
