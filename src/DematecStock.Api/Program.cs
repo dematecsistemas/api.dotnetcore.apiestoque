@@ -3,7 +3,7 @@ using DematecStock.Application;
 using DematecStock.Infrastructure;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Models;
+using Microsoft.OpenApi;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -22,20 +22,10 @@ builder.Services.AddSwaggerGen(config =>
         Type = SecuritySchemeType.Http,
     });
 
-    config.AddSecurityRequirement(new OpenApiSecurityRequirement
+    config.AddSecurityRequirement(document => new OpenApiSecurityRequirement
     {
         {
-            new OpenApiSecurityScheme
-            {
-                Reference = new OpenApiReference
-                {
-                    Type = ReferenceType.SecurityScheme,
-                    Id = "Bearer"
-                },
-                Scheme = "oauth2",
-                Name = "Bearer",
-                In = ParameterLocation.Header,
-            },
+            new OpenApiSecuritySchemeReference("Bearer", document),
             new List<string>()
         }
     });
