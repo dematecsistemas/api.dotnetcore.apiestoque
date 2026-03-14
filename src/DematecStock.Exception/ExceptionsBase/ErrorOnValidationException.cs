@@ -13,9 +13,9 @@ namespace DematecStock.Exception.ExceptionsBase
             _erros = errorMessages;
         }
 
-        public ErrorOnValidationException(String errorMessage)
+        public ErrorOnValidationException(string errorMessage)
         {
-            _erros!.Add(errorMessage);
+            _erros = [errorMessage];
         }
 
         public override List<string> GetErrors()

@@ -22,7 +22,7 @@ namespace DematecStock.Api.Controllers
                 return BadRequest(new ResponseErrorJson("Pagina deve ser maior que zero."));
 
             if (pageSize <= 0)
-                return BadRequest(new ResponseErrorJson("Pagina deve ser maior que zero."));
+                return BadRequest(new ResponseErrorJson("Tamanho da página deve ser maior que zero."));
 
             var response = await useCase.Execute(q, page, pageSize, ct);
             return Ok(response);

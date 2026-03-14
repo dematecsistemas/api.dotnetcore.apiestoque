@@ -41,8 +41,16 @@ namespace DematecStock.Infrastructure.DataAccess
                 entity.HasKey(e => new { e.IdLocation, e.IdProduct });
                 entity.Property(e => e.OnHandQuantity).HasPrecision(18, 4);
             });
+
+            modelBuilder.Entity<InventoryMovements>(entity =>
+            {
+                entity.Property(e => e.Quantity).HasPrecision(18, 4);
+            });
         }
 
         public DbSet<InventoryLocation> InventoryLocation { get; set; }
+
+        public DbSet<InventoryMovements> InventoryMovements { get; set; }
+
     }
 }

@@ -1,0 +1,296 @@
+alteracaoes no banco de dados do distribuicao para o estoque 
+
+-------------------------------------------------------------------------------------------------------------------------------
+CREATE INDEX IX_PRODUTOS_Tipo_CodProduto
+ON dbo.PRODUTOS (TipoProd, CodProduto)
+INCLUDE (CodGrupo, CodSubGrupo, Desceq, Unideq, Situeq);
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+CREATE INDEX IX_UnidadeAlt_CodProduto_Unidade
+ON dbo.UnidadeAlt (CodProduto, Unidade)
+INCLUDE (CodEan14, PesoBru, PesoLiq, Altura, Largura, Comprimento);
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+IF NOT EXISTS (SELECT 1 FROM sys.fulltext_catalogs WHERE name = 'ftProdutos')
+BEGIN
+    CREATE FULLTEXT CATALOG ftProdutos AS DEFAULT;
+END
+GO
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+CREATE FULLTEXT INDEX ON dbo.PRODUTOS
+(
+    Desceq LANGUAGE 1046
+)
+KEY INDEX PK_Produtos_1
+ON ftProdutos
+WITH CHANGE_TRACKING AUTO;
+GO
+
+IF COL_LENGTH('dbo.PRODUTOS', 'SearchDescription') IS NULL
+BEGIN
+    ALTER TABLE dbo.PRODUTOS
+    ADD SearchDescription AS
+    (
+        UPPER(
+            LTRIM(RTRIM(
+                REPLACE(
+                    REPLACE(
+                        REPLACE(
+                            REPLACE(
+                                TRANSLATE(
+                                    ISNULL(Desceq, ''),
+                                    '.,;:/\|-_()[]{}"''+*=!?@#$%',
+                                    '                          '  -- 26 espaços
+                                ),
+                                CHAR(9), ' '
+                            ),
+                            CHAR(10), ' '
+                        ),
+                        CHAR(13), ' '
+                    ),
+                    '  ', ' '
+                )
+            ))
+        )
+    ) PERSISTED;
+END
+GO
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+IF NOT EXISTS
+(
+    SELECT 1
+    FROM sys.fulltext_index_columns fic
+    JOIN sys.columns c
+      ON c.object_id = fic.object_id
+     AND c.column_id = fic.column_id
+    WHERE fic.object_id = OBJECT_ID('dbo.PRODUTOS')
+      AND c.name = 'SearchDescription'
+)
+BEGIN
+    ALTER FULLTEXT INDEX ON dbo.PRODUTOS
+    ADD (SearchDescription LANGUAGE 1046);  -- sem NO POPULATION
+END
+GO
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+CREATE OR ALTER PROCEDURE dbo.usp_Wms_ProductSearch
+    @q     NVARCHAR(100) = NULL,
+    @take  INT = 50
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    DECLARE @term NVARCHAR(100) = NULLIF(LTRIM(RTRIM(@q)), '');
+    SET @take = CASE WHEN @take IS NULL OR @take < 1 THEN 50
+                     WHEN @take > 200 THEN 200
+                     ELSE @take END;
+
+    -- Sem termo: retorna uma lista curta
+    IF @term IS NULL
+    BEGIN
+        SELECT TOP (@take)
+            p.CodProduto      AS IdProduct,
+            p.Desceq          AS ProductDescription,
+            p.Unideq          AS BaseUoM,
+            p.Situeq          AS IsProductInactive,
+            ua.CodEan14       AS Ean13Code,
+            ua.PesoBru        AS GrossWeight,
+            ua.PesoLiq        AS NetWeight,
+            ua.Altura         AS Height,
+            ua.Largura        AS Width,
+            ua.Comprimento    AS Length,
+            p.CodGrupo        AS IdProductGroup,
+            gp.Descricao      AS ProductGroupDescription,
+            p.CodSubGrupo     AS IdProductSubgroup,
+            sgp.DesSubGrupo   AS ProductSubgroupDescription
+        FROM dbo.PRODUTOS p
+        JOIN dbo.UnidadeAlt ua     ON ua.CodProduto = p.CodProduto AND ua.Unidade = p.Unideq
+        JOIN dbo.GrupoProdutos gp  ON gp.CodGrupo = p.CodGrupo
+        JOIN dbo.SubGrupos sgp     ON sgp.CodSubGrupo = p.CodSubGrupo
+        WHERE p.TipoProd = 'VL'
+        ORDER BY p.Desceq;
+
+        RETURN;
+    END;
+
+    /* Normaliza o termo igual a SearchDescription */
+    DECLARE @norm NVARCHAR(200) =
+        UPPER(
+            LTRIM(RTRIM(
+                REPLACE(REPLACE(REPLACE(REPLACE(
+                    TRANSLATE(
+                        @term,
+                        '.,;:/\|-_()[]{}"''+*=!?@#$%&',
+                        '                              '
+                    ),
+                CHAR(9), ' '), CHAR(10), ' '), CHAR(13), ' '), '  ', ' ')
+            ))
+        );
+
+    -- colapsa espaços repetidos (algumas vezes 2 REPLACE não basta)
+    WHILE CHARINDEX('  ', @norm) > 0
+        SET @norm = REPLACE(@norm, '  ', ' ');
+
+    /*
+      Monta o full-text query:
+      "PALAVRA1*" AND "PALAVRA2*" ...
+      (Para um termo só vira: "EROS*")
+    */
+    DECLARE @fts NVARCHAR(4000);
+
+    SELECT @fts =
+        STRING_AGG('"' + value + '*"', ' AND ')
+    FROM STRING_SPLIT(@norm, ' ')
+    WHERE value IS NOT NULL
+      AND LEN(value) >= 2;  -- evita lixo (ex: "E", "X" etc.)
+
+    -- Se tudo virou stopword/lixo, cai pra algo simples
+    IF @fts IS NULL OR LTRIM(RTRIM(@fts)) = ''
+        SET @fts = '"' + REPLACE(@norm, '"', '""') + '*"';
+
+    ;WITH Hits AS
+    (
+        -- 1) Código do produto (prefixo)
+        SELECT p.CodProduto, 1200 AS Score
+        FROM dbo.PRODUTOS p
+        WHERE p.TipoProd = 'VL'
+          AND CONVERT(VARCHAR(20), p.CodProduto) LIKE CONVERT(VARCHAR(20), @term) + '%'
+
+        UNION ALL
+
+        -- 2) GTIN14 (prefixo)
+        SELECT p.CodProduto, 1100 AS Score
+        FROM dbo.PRODUTOS p
+        JOIN dbo.UnidadeAlt ua ON ua.CodProduto = p.CodProduto AND ua.Unidade = p.Unideq
+        WHERE p.TipoProd = 'VL'
+          AND ua.CodEan14 LIKE @term + '%'
+
+        UNION ALL
+
+        -- 3) Descrição normalizada via Full-Text (ranking)
+        SELECT p.CodProduto, ft.[RANK] AS Score
+        FROM CONTAINSTABLE(dbo.PRODUTOS, (SearchDescription, Desceq), @fts, 200)ft
+        JOIN dbo.PRODUTOS p ON p.CodProduto = ft.[KEY]
+        WHERE p.TipoProd = 'VL'
+    ),
+    Ranked AS
+    (
+        SELECT CodProduto, MAX(Score) AS Score
+        FROM Hits
+        GROUP BY CodProduto
+    )
+    SELECT TOP (@take)
+        p.CodProduto      AS IdProduct,
+        p.Desceq          AS ProductDescription,
+        p.Unideq          AS BaseUoM,
+        p.Situeq          AS IsProductInactive,
+        ua.CodEan14       AS Ean13Code,
+        ua.PesoBru        AS GrossWeight,
+        ua.PesoLiq        AS NetWeight,
+        ua.Altura         AS Height,
+        ua.Largura        AS Width,
+        ua.Comprimento    AS Length,
+        p.CodGrupo        AS IdProductGroup,
+        gp.Descricao      AS ProductGroupDescription,
+        p.CodSubGrupo     AS IdProductSubgroup,
+        sgp.DesSubGrupo   AS ProductSubgroupDescription
+    FROM Ranked r
+    JOIN dbo.PRODUTOS p        ON p.CodProduto = r.CodProduto
+    JOIN dbo.UnidadeAlt ua     ON ua.CodProduto = p.CodProduto AND ua.Unidade = p.Unideq
+    JOIN dbo.GrupoProdutos gp  ON gp.CodGrupo = p.CodGrupo
+    JOIN dbo.SubGrupos sgp     ON sgp.CodSubGrupo = p.CodSubGrupo
+    WHERE p.TipoProd = 'VL'
+    ORDER BY r.Score DESC, p.Desceq;
+END
+GO
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+CREATE SCHEMA wms AUTHORIZATION dbo;
+GO
+create TABLE dbo.WmsInventoryMovement
+(
+    IdMovement          BIGINT IDENTITY(1,1) NOT NULL,
+    MovementDate        DATETIME2(0) NOT NULL,          
+    IdUser              INT NOT NULL,                   
+    Operation       VARCHAR(100) NOT NULL,          
+    MovementDirection   CHAR(1) NOT NULL,               
+    IdProduct           INT NOT NULL,
+    IdLocation          INT NOT NULL,
+	Quantity            DECIMAL(19,4) NOT NULL,
+    Remarks             VARCHAR(150) NULL,              
+    -- Auditoria (melhora rastreabilidade WMS)
+    CreatedAtUtc        DATETIME2(0) NOT NULL
+
+    CONSTRAINT DF_WmsInventoryMovement_CreatedAtUtc DEFAULT (SYSUTCDATETIME()),
+	CONSTRAINT CK_WmsInvMove_Direction CHECK (MovementDirection IN ('E','S')),
+    CONSTRAINT CK_WmsInvMove_Qty_Positive CHECK (Quantity > 0),
+	CONSTRAINT PK_WmsInvMove
+        PRIMARY KEY CLUSTERED (IdMovement)
+        WITH (
+            FILLFACTOR = 100,
+			OPTIMIZE_FOR_SEQUENTIAL_KEY = ON
+
+        )
+);
+
+GO
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+CREATE NONCLUSTERED INDEX IX_WmsInvMove_Product_Date
+ON dbo.WmsInventoryMovement (IdProduct, MovementDate)
+INCLUDE (IdLocation, MovementDirection, Quantity, Operation, IdUser)
+WITH (FILLFACTOR = 95, DATA_COMPRESSION = PAGE);
+GO
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+CREATE NONCLUSTERED INDEX IX_WmsInvMove_Location_Date
+ON dbo.WmsInventoryMovement (IdLocation, MovementDate)
+INCLUDE (IdProduct, MovementDirection, Quantity, Operation, IdUser)
+WITH (FILLFACTOR = 95, DATA_COMPRESSION = PAGE);
+GO
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+CREATE NONCLUSTERED INDEX IX_WmsInvMove_Date
+ON dbo.WmsInventoryMovement (MovementDate)
+INCLUDE (IdProduct, IdLocation, MovementDirection, Quantity, Operation, IdUser)
+WITH (FILLFACTOR = 95, DATA_COMPRESSION = PAGE);
+GO
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+CREATE NONCLUSTERED INDEX IX_WmsInvMove_User_Date
+ON dbo.WmsInventoryMovement (IdUser, MovementDate)
+INCLUDE (IdProduct, IdLocation, MovementDirection, Quantity, Operation)
+WITH (FILLFACTOR = 95, DATA_COMPRESSION = PAGE);
+GO
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------

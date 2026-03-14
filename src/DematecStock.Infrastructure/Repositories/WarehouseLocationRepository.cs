@@ -30,6 +30,13 @@ namespace DematecStock.Infrastructure.Repositories
                 .FirstOrDefaultAsync(location => location.IdLocation == id);
         }
 
+        public async Task<bool> ExistsById(int id)
+        {
+            return await _dbContext.WarehouseLocations
+                .AsNoTracking()
+                .AnyAsync(l => l.IdLocation == id);
+        }
+
         public void Update(WarehouseLocations location)
         {
             _dbContext.WarehouseLocations.Update(location);

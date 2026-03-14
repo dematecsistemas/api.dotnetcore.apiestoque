@@ -3,8 +3,77 @@
   "WorkspaceRootPath": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\GUIA_DESENVOLVIMENTO_INVENTORYLOCATION.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GUIA_DESENVOLVIMENTO_INVENTORYLOCATION.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+      "AbsoluteMoniker": "D:0:0:{826A9EBE-7F5F-4600-9401-0A6EAF8A0FE1}|src\\DematecStock.Application\\DematecStock.Application.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\src\\dematecstock.application\\usecases\\inventorylocation\\addinventorylocation\\addinventorylocationusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{826A9EBE-7F5F-4600-9401-0A6EAF8A0FE1}|src\\DematecStock.Application\\DematecStock.Application.csproj|solutionrelative:src\\dematecstock.application\\usecases\\inventorylocation\\addinventorylocation\\addinventorylocationusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{826A9EBE-7F5F-4600-9401-0A6EAF8A0FE1}|src\\DematecStock.Application\\DematecStock.Application.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\src\\dematecstock.application\\usecases\\inventorylocation\\updateonhandquantity\\updateonhandquantityusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{826A9EBE-7F5F-4600-9401-0A6EAF8A0FE1}|src\\DematecStock.Application\\DematecStock.Application.csproj|solutionrelative:src\\dematecstock.application\\usecases\\inventorylocation\\updateonhandquantity\\updateonhandquantityusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{826A9EBE-7F5F-4600-9401-0A6EAF8A0FE1}|src\\DematecStock.Application\\DematecStock.Application.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\src\\dematecstock.application\\usecases\\inventorylocation\\deleteinventorylocation\\deleteinventorylocationusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{826A9EBE-7F5F-4600-9401-0A6EAF8A0FE1}|src\\DematecStock.Application\\DematecStock.Application.csproj|solutionrelative:src\\dematecstock.application\\usecases\\inventorylocation\\deleteinventorylocation\\deleteinventorylocationusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3A9C778-AD8B-472A-89DA-21E97100CF01}|tests\\DematecStock.Tests\\DematecStock.Tests.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\tests\\dematecstock.tests\\controllers\\inventorymovementscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3A9C778-AD8B-472A-89DA-21E97100CF01}|tests\\DematecStock.Tests\\DematecStock.Tests.csproj|solutionrelative:tests\\dematecstock.tests\\controllers\\inventorymovementscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{826A9EBE-7F5F-4600-9401-0A6EAF8A0FE1}|src\\DematecStock.Application\\DematecStock.Application.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\src\\dematecstock.application\\automapper\\automapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{826A9EBE-7F5F-4600-9401-0A6EAF8A0FE1}|src\\DematecStock.Application\\DematecStock.Application.csproj|solutionrelative:src\\dematecstock.application\\automapper\\automapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F1FA4BE-E1FA-4322-85E5-D7ACD4026115}|src\\DematecStock.Infrastructure\\DematecStock.Infrastructure.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\src\\dematecstock.infrastructure\\dependencyinjectionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F1FA4BE-E1FA-4322-85E5-D7ACD4026115}|src\\DematecStock.Infrastructure\\DematecStock.Infrastructure.csproj|solutionrelative:src\\dematecstock.infrastructure\\dependencyinjectionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F1FA4BE-E1FA-4322-85E5-D7ACD4026115}|src\\DematecStock.Infrastructure\\DematecStock.Infrastructure.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\src\\dematecstock.infrastructure\\repositories\\warehouselocationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F1FA4BE-E1FA-4322-85E5-D7ACD4026115}|src\\DematecStock.Infrastructure\\DematecStock.Infrastructure.csproj|solutionrelative:src\\dematecstock.infrastructure\\repositories\\warehouselocationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD91ACD-7877-4362-AB96-06B79A3840BC}|src\\DematecStock.Domain\\DematecStock.Domain.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\src\\dematecstock.domain\\repositories\\warehouselocations\\iwarehouselocationsreadonlyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD91ACD-7877-4362-AB96-06B79A3840BC}|src\\DematecStock.Domain\\DematecStock.Domain.csproj|solutionrelative:src\\dematecstock.domain\\repositories\\warehouselocations\\iwarehouselocationsreadonlyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD91ACD-7877-4362-AB96-06B79A3840BC}|src\\DematecStock.Domain\\DematecStock.Domain.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\src\\dematecstock.domain\\repositories\\product\\iproductreadonlyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD91ACD-7877-4362-AB96-06B79A3840BC}|src\\DematecStock.Domain\\DematecStock.Domain.csproj|solutionrelative:src\\dematecstock.domain\\repositories\\product\\iproductreadonlyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2E8F98A-2F44-4EAD-9072-8914EC64EAD7}|src\\DematecStock.Api\\DematecStock.Api.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\src\\dematecstock.api\\controllers\\inventorylocationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2E8F98A-2F44-4EAD-9072-8914EC64EAD7}|src\\DematecStock.Api\\DematecStock.Api.csproj|solutionrelative:src\\dematecstock.api\\controllers\\inventorylocationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2E8F98A-2F44-4EAD-9072-8914EC64EAD7}|src\\DematecStock.Api\\DematecStock.Api.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\src\\dematecstock.api\\controllers\\inventorymovementscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2E8F98A-2F44-4EAD-9072-8914EC64EAD7}|src\\DematecStock.Api\\DematecStock.Api.csproj|solutionrelative:src\\dematecstock.api\\controllers\\inventorymovementscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F1FA4BE-E1FA-4322-85E5-D7ACD4026115}|src\\DematecStock.Infrastructure\\DematecStock.Infrastructure.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\src\\dematecstock.infrastructure\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F1FA4BE-E1FA-4322-85E5-D7ACD4026115}|src\\DematecStock.Infrastructure\\DematecStock.Infrastructure.csproj|solutionrelative:src\\dematecstock.infrastructure\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3A9C778-AD8B-472A-89DA-21E97100CF01}|tests\\DematecStock.Tests\\DematecStock.Tests.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\tests\\dematecstock.tests\\usecases\\inventorymovement\\addinventorymovementsusecasetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3A9C778-AD8B-472A-89DA-21E97100CF01}|tests\\DematecStock.Tests\\DematecStock.Tests.csproj|solutionrelative:tests\\dematecstock.tests\\usecases\\inventorymovement\\addinventorymovementsusecasetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marcu\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\237577721\\AddInventoryLocationUseCaseTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marcu\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\237577721\\UpdateOnHandQuantityUseCaseTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marcu\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\237577721\\DeleteInventoryLocationUseCaseTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3A9C778-AD8B-472A-89DA-21E97100CF01}|tests\\DematecStock.Tests\\DematecStock.Tests.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\tests\\dematecstock.tests\\usecases\\inventorylocation\\addinventorylocationusecasetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3A9C778-AD8B-472A-89DA-21E97100CF01}|tests\\DematecStock.Tests\\DematecStock.Tests.csproj|solutionrelative:tests\\dematecstock.tests\\usecases\\inventorylocation\\addinventorylocationusecasetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3A9C778-AD8B-472A-89DA-21E97100CF01}|tests\\DematecStock.Tests\\DematecStock.Tests.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\tests\\dematecstock.tests\\usecases\\inventorylocation\\updateonhandquantityusecasetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3A9C778-AD8B-472A-89DA-21E97100CF01}|tests\\DematecStock.Tests\\DematecStock.Tests.csproj|solutionrelative:tests\\dematecstock.tests\\usecases\\inventorylocation\\updateonhandquantityusecasetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3A9C778-AD8B-472A-89DA-21E97100CF01}|tests\\DematecStock.Tests\\DematecStock.Tests.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\tests\\dematecstock.tests\\usecases\\inventorylocation\\deleteinventorylocationusecasetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3A9C778-AD8B-472A-89DA-21E97100CF01}|tests\\DematecStock.Tests\\DematecStock.Tests.csproj|solutionrelative:tests\\dematecstock.tests\\usecases\\inventorylocation\\deleteinventorylocationusecasetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +83,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,15 +91,249 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DeleteInventoryLocationUseCaseTests.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\tests\\DematecStock.Tests\\UseCases\\InventoryLocation\\DeleteInventoryLocationUseCaseTests.cs",
+              "RelativeDocumentMoniker": "tests\\DematecStock.Tests\\UseCases\\InventoryLocation\\DeleteInventoryLocationUseCaseTests.cs",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\tests\\DematecStock.Tests\\UseCases\\InventoryLocation\\DeleteInventoryLocationUseCaseTests.cs",
+              "RelativeToolTip": "tests\\DematecStock.Tests\\UseCases\\InventoryLocation\\DeleteInventoryLocationUseCaseTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAIwJwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T20:46:30.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UpdateOnHandQuantityUseCaseTests.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\tests\\DematecStock.Tests\\UseCases\\InventoryLocation\\UpdateOnHandQuantityUseCaseTests.cs",
+              "RelativeDocumentMoniker": "tests\\DematecStock.Tests\\UseCases\\InventoryLocation\\UpdateOnHandQuantityUseCaseTests.cs",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\tests\\DematecStock.Tests\\UseCases\\InventoryLocation\\UpdateOnHandQuantityUseCaseTests.cs",
+              "RelativeToolTip": "tests\\DematecStock.Tests\\UseCases\\InventoryLocation\\UpdateOnHandQuantityUseCaseTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAIwJoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T20:46:14.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AddInventoryLocationUseCaseTests.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\tests\\DematecStock.Tests\\UseCases\\InventoryLocation\\AddInventoryLocationUseCaseTests.cs",
+              "RelativeDocumentMoniker": "tests\\DematecStock.Tests\\UseCases\\InventoryLocation\\AddInventoryLocationUseCaseTests.cs",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\tests\\DematecStock.Tests\\UseCases\\InventoryLocation\\AddInventoryLocationUseCaseTests.cs",
+              "RelativeToolTip": "tests\\DematecStock.Tests\\UseCases\\InventoryLocation\\AddInventoryLocationUseCaseTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAIwJYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T20:45:58.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UpdateOnHandQuantityUseCaseTests.cs",
+              "DocumentMoniker": "C:\\Users\\marcu\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\237577721\\UpdateOnHandQuantityUseCaseTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Users\\marcu\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\237577721\\UpdateOnHandQuantityUseCaseTests.cs",
+              "ToolTip": "C:\\Users\\marcu\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\237577721\\UpdateOnHandQuantityUseCaseTests.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Users\\marcu\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\237577721\\UpdateOnHandQuantityUseCaseTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T20:45:39.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AddInventoryLocationUseCaseTests.cs",
+              "DocumentMoniker": "C:\\Users\\marcu\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\237577721\\AddInventoryLocationUseCaseTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Users\\marcu\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\237577721\\AddInventoryLocationUseCaseTests.cs",
+              "ToolTip": "C:\\Users\\marcu\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\237577721\\AddInventoryLocationUseCaseTests.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Users\\marcu\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\237577721\\AddInventoryLocationUseCaseTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T20:45:36.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GUIA_DESENVOLVIMENTO_INVENTORYLOCATION.md",
-              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\GUIA_DESENVOLVIMENTO_INVENTORYLOCATION.md",
-              "RelativeDocumentMoniker": "GUIA_DESENVOLVIMENTO_INVENTORYLOCATION.md",
-              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\GUIA_DESENVOLVIMENTO_INVENTORYLOCATION.md",
-              "RelativeToolTip": "GUIA_DESENVOLVIMENTO_INVENTORYLOCATION.md",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAswPYBAABoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-03-13T21:38:24.119Z",
+              "Title": "AddInventoryLocationUseCase.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Application\\UseCases\\InventoryLocation\\AddInventoryLocation\\AddInventoryLocationUseCase.cs",
+              "RelativeDocumentMoniker": "src\\DematecStock.Application\\UseCases\\InventoryLocation\\AddInventoryLocation\\AddInventoryLocationUseCase.cs",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Application\\UseCases\\InventoryLocation\\AddInventoryLocation\\AddInventoryLocationUseCase.cs",
+              "RelativeToolTip": "src\\DematecStock.Application\\UseCases\\InventoryLocation\\AddInventoryLocation\\AddInventoryLocationUseCase.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAzwCYAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T20:34:54.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DeleteInventoryLocationUseCaseTests.cs",
+              "DocumentMoniker": "C:\\Users\\marcu\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\237577721\\DeleteInventoryLocationUseCaseTests.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Users\\marcu\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\237577721\\DeleteInventoryLocationUseCaseTests.cs",
+              "ToolTip": "C:\\Users\\marcu\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\237577721\\DeleteInventoryLocationUseCaseTests.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\Users\\marcu\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\237577721\\DeleteInventoryLocationUseCaseTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T20:45:42.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AddInventoryMovementsUseCaseTests.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\tests\\DematecStock.Tests\\UseCases\\InventoryMovement\\AddInventoryMovementsUseCaseTests.cs",
+              "RelativeDocumentMoniker": "tests\\DematecStock.Tests\\UseCases\\InventoryMovement\\AddInventoryMovementsUseCaseTests.cs",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\tests\\DematecStock.Tests\\UseCases\\InventoryMovement\\AddInventoryMovementsUseCaseTests.cs",
+              "RelativeToolTip": "tests\\DematecStock.Tests\\UseCases\\InventoryMovement\\AddInventoryMovementsUseCaseTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAIwJ8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T20:42:16.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UpdateOnHandQuantityUseCase.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Application\\UseCases\\InventoryLocation\\UpdateOnHandQuantity\\UpdateOnHandQuantityUseCase.cs",
+              "RelativeDocumentMoniker": "src\\DematecStock.Application\\UseCases\\InventoryLocation\\UpdateOnHandQuantity\\UpdateOnHandQuantityUseCase.cs",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Application\\UseCases\\InventoryLocation\\UpdateOnHandQuantity\\UpdateOnHandQuantityUseCase.cs",
+              "RelativeToolTip": "src\\DematecStock.Application\\UseCases\\InventoryLocation\\UpdateOnHandQuantity\\UpdateOnHandQuantityUseCase.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAIAwwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T20:35:04.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DeleteInventoryLocationUseCase.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Application\\UseCases\\InventoryLocation\\DeleteInventoryLocation\\DeleteInventoryLocationUseCase.cs",
+              "RelativeDocumentMoniker": "src\\DematecStock.Application\\UseCases\\InventoryLocation\\DeleteInventoryLocation\\DeleteInventoryLocationUseCase.cs",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Application\\UseCases\\InventoryLocation\\DeleteInventoryLocation\\DeleteInventoryLocationUseCase.cs",
+              "RelativeToolTip": "src\\DematecStock.Application\\UseCases\\InventoryLocation\\DeleteInventoryLocation\\DeleteInventoryLocationUseCase.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAMwCYAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T20:35:15.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InventoryMovementsControllerTests.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\tests\\DematecStock.Tests\\Controllers\\InventoryMovementsControllerTests.cs",
+              "RelativeDocumentMoniker": "tests\\DematecStock.Tests\\Controllers\\InventoryMovementsControllerTests.cs",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\tests\\DematecStock.Tests\\Controllers\\InventoryMovementsControllerTests.cs",
+              "RelativeToolTip": "tests\\DematecStock.Tests\\Controllers\\InventoryMovementsControllerTests.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAtwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T20:35:45.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AutoMapping.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Application\\AutoMapper\\AutoMapping.cs",
+              "RelativeDocumentMoniker": "src\\DematecStock.Application\\AutoMapper\\AutoMapping.cs",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Application\\AutoMapper\\AutoMapping.cs",
+              "RelativeToolTip": "src\\DematecStock.Application\\AutoMapper\\AutoMapping.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T20:34:28.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DependencyInjectionExtension.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Infrastructure\\DependencyInjectionExtension.cs",
+              "RelativeDocumentMoniker": "src\\DematecStock.Infrastructure\\DependencyInjectionExtension.cs",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Infrastructure\\DependencyInjectionExtension.cs",
+              "RelativeToolTip": "src\\DematecStock.Infrastructure\\DependencyInjectionExtension.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T20:34:17.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WarehouseLocationRepository.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Infrastructure\\Repositories\\WarehouseLocationRepository.cs",
+              "RelativeDocumentMoniker": "src\\DematecStock.Infrastructure\\Repositories\\WarehouseLocationRepository.cs",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Infrastructure\\Repositories\\WarehouseLocationRepository.cs",
+              "RelativeToolTip": "src\\DematecStock.Infrastructure\\Repositories\\WarehouseLocationRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAnwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T20:34:10.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Infrastructure\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "src\\DematecStock.Infrastructure\\Repositories\\ProductRepository.cs",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Infrastructure\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "src\\DematecStock.Infrastructure\\Repositories\\ProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAIwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T20:34:05.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IWarehouseLocationsReadOnlyRepository.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Domain\\Repositories\\WarehouseLocations\\IWarehouseLocationsReadOnlyRepository.cs",
+              "RelativeDocumentMoniker": "src\\DematecStock.Domain\\Repositories\\WarehouseLocations\\IWarehouseLocationsReadOnlyRepository.cs",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Domain\\Repositories\\WarehouseLocations\\IWarehouseLocationsReadOnlyRepository.cs",
+              "RelativeToolTip": "src\\DematecStock.Domain\\Repositories\\WarehouseLocations\\IWarehouseLocationsReadOnlyRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T20:33:59.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IProductReadOnlyRepository.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Domain\\Repositories\\Product\\IProductReadOnlyRepository.cs",
+              "RelativeDocumentMoniker": "src\\DematecStock.Domain\\Repositories\\Product\\IProductReadOnlyRepository.cs",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Domain\\Repositories\\Product\\IProductReadOnlyRepository.cs",
+              "RelativeToolTip": "src\\DematecStock.Domain\\Repositories\\Product\\IProductReadOnlyRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAIwAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T20:33:55.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "InventoryLocationController.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Api\\Controllers\\InventoryLocationController.cs",
+              "RelativeDocumentMoniker": "src\\DematecStock.Api\\Controllers\\InventoryLocationController.cs",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Api\\Controllers\\InventoryLocationController.cs",
+              "RelativeToolTip": "src\\DematecStock.Api\\Controllers\\InventoryLocationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T20:15:09.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "InventoryMovementsController.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Api\\Controllers\\InventoryMovementsController.cs",
+              "RelativeDocumentMoniker": "src\\DematecStock.Api\\Controllers\\InventoryMovementsController.cs",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Api\\Controllers\\InventoryMovementsController.cs",
+              "RelativeToolTip": "src\\DematecStock.Api\\Controllers\\InventoryMovementsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-14T14:52:49.36Z",
               "EditorCaption": ""
             }
           ]

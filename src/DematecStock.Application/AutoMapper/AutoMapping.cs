@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using DematecStock.Communication.Requests.InventoryLocation;
+using DematecStock.Communication.Requests.InventoryMovement;
 using DematecStock.Communication.Requests.WarehouseLocations;
 using DematecStock.Communication.Responses;
 using DematecStock.Domain.DTOs;
@@ -23,6 +24,8 @@ namespace DematecStock.Application.AutoMapper
             CreateMap<RequestWriteWarehouseLocationJson, WarehouseLocations>();
             CreateMap<RequestUpdateWarehouseLocationJson, WarehouseLocations>();
             CreateMap<RequestAddInventoryLocationJson, InventoryLocation>();
+            CreateMap<RequestAddInventoryMovementJsons, InventoryMovements>()
+                .ForMember(dest => dest.MovementDate, opt => opt.Ignore());
         }
 
         private void EntityToResponse()

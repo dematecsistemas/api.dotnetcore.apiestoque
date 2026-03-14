@@ -4,5 +4,6 @@ namespace DematecStock.Domain.Repositories.InventoryLocation
     {
         Task Add(Entities.InventoryLocation inventoryLocation);
         Task Delete(int idLocation, int idProduct);
+        void DeleteTracked(Entities.InventoryLocation inventoryLocation);
     }
 }

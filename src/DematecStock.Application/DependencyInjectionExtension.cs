@@ -2,6 +2,7 @@
 using DematecStock.Application.UseCases.InventoryLocation.AddInventoryLocation;
 using DematecStock.Application.UseCases.InventoryLocation.DeleteInventoryLocation;
 using DematecStock.Application.UseCases.InventoryLocation.UpdateOnHandQuantity;
+using DematecStock.Application.UseCases.InventoryMovement;
 using DematecStock.Application.UseCases.Login.DoLogin;
 using DematecStock.Application.UseCases.ProductSearch.GetProductSearch;
 using DematecStock.Application.UseCases.ProductsAddress.GetAllLocationsByProducts;
@@ -24,7 +25,7 @@ namespace DematecStock.Application
 
         private static void AddAutoMapper(IServiceCollection services)
         {
-            services.AddAutoMapper(typeof(AutoMapping));
+            services.AddAutoMapper(cfg => cfg.AddProfile<AutoMapping>());
         }
 
         private static void AddUseCases(IServiceCollection services)
@@ -39,6 +40,8 @@ namespace DematecStock.Application
             services.AddScoped<IAddInventoryLocationUseCase, AddInventoryLocationUseCase>();
             services.AddScoped<IDeleteInventoryLocationUseCase, DeleteInventoryLocationUseCase>();
             services.AddScoped<IUpdateOnHandQuantityUseCase, UpdateOnHandQuantityUseCase>();
+            services.AddScoped<IAddInventoryMovementsUseCase, AddInventoryMovementsUseCase>();
+
         }
     }
 }

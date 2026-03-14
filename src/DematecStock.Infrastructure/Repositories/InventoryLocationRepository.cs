@@ -5,9 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DematecStock.Infrastructure.Repositories
 {
-    public class InventoryLocationRepository :
-        IInventoryLocationWriteOnlyRepository,
-        IInventoryLocationUpdateOnlyRepository
+    public class InventoryLocationRepository : IInventoryLocationWriteOnlyRepository, IInventoryLocationUpdateOnlyRepository
     {
         private readonly DematecStockDbContext _dbContext;
 
@@ -28,6 +26,11 @@ namespace DematecStock.Infrastructure.Repositories
 
             if (entity is not null)
                 _dbContext.InventoryLocation.Remove(entity);
+        }
+
+        public void DeleteTracked(InventoryLocation inventoryLocation)
+        {
+            _dbContext.InventoryLocation.Remove(inventoryLocation);
         }
 
         public async Task<InventoryLocation?> GetByKey(int idLocation, int idProduct)
