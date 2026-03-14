@@ -1,5 +1,6 @@
 ﻿using BaseApi.Infrastructure.Repositories;
 using DematecStock.Domain.Repositories;
+using DematecStock.Domain.Repositories.InventoryLocation;
 using DematecStock.Domain.Repositories.PorductSearch;
 using DematecStock.Domain.Repositories.ProductAddress;
 using DematecStock.Domain.Repositories.Users;
@@ -48,6 +49,9 @@ namespace DematecStock.Infrastructure
 
             services.AddScoped<IProductAddressReadOnlyRepository, ProductAddressRepository>();
             services.AddScoped<IProductSearchReadOnlyRepository, ProductSearchRepository>();
+
+            services.AddScoped<IInventoryLocationWriteOnlyRepository, InventoryLocationRepository>();
+            services.AddScoped<IInventoryLocationUpdateOnlyRepository, InventoryLocationRepository>();
         }
 
         private static void AddDbContext(IServiceCollection services, IConfiguration configuration)

@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using DematecStock.Communication.Requests.InventoryLocation;
 using DematecStock.Communication.Requests.WarehouseLocations;
 using DematecStock.Communication.Responses;
 using DematecStock.Domain.DTOs;
@@ -21,6 +22,7 @@ namespace DematecStock.Application.AutoMapper
             // Exemplo: CreateMap<RequestRegisterExpenseJson, Expense>();
             CreateMap<RequestWriteWarehouseLocationJson, WarehouseLocations>();
             CreateMap<RequestUpdateWarehouseLocationJson, WarehouseLocations>();
+            CreateMap<RequestAddInventoryLocationJson, InventoryLocation>();
         }
 
         private void EntityToResponse()
