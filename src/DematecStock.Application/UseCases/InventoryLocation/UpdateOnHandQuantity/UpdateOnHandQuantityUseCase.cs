@@ -32,7 +32,7 @@ namespace DematecStock.Application.UseCases.InventoryLocation.UpdateOnHandQuanti
                 throw new ErrorOnValidationException("O saldo do endereço não pode ficar negativo.");
 
             if (!await _warehouseLocationRepository.ExistsById(idLocation))
-                throw new NotFoundException("Localização informado não foi encontrado.");
+                throw new NotFoundException("Localização informada não foi encontrado.");
 
             if (!await _productRepository.ExistsAsync(idProduct))
                 throw new NotFoundException("O produto informado não foi encontrado.");

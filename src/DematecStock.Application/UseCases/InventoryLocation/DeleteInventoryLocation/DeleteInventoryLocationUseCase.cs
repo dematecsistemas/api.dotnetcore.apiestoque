@@ -31,7 +31,7 @@ namespace DematecStock.Application.UseCases.InventoryLocation.DeleteInventoryLoc
         public async Task Execute(int idLocation, int idProduct)
         {
             if (!await _warehouseLocationRepository.ExistsById(idLocation))
-                throw new NotFoundException("Localização informado não foi encontrado.");
+                throw new NotFoundException("Localização informada não foi encontrado.");
 
             if (!await _productRepository.ExistsAsync(idProduct))
                 throw new NotFoundException("O produto informado não foi encontrado.");

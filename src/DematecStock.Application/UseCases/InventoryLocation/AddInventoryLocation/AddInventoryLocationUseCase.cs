@@ -36,7 +36,7 @@ namespace DematecStock.Application.UseCases.InventoryLocation.AddInventoryLocati
                 throw new ErrorOnValidationException("O saldo do endereço não pode ficar negativo.");
 
             if (!await _warehouseLocationRepository.ExistsById(request.IdLocation))
-                throw new NotFoundException("Localização informado não foi encontrado.");
+                throw new NotFoundException("Localização informada não foi encontrado.");
 
             if (!await _productRepository.ExistsAsync(request.IdProduct))
                 throw new NotFoundException("O produto informado não foi encontrado.");

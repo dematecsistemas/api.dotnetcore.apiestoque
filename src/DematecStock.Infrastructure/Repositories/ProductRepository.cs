@@ -13,12 +13,10 @@ namespace DematecStock.Infrastructure.Repositories
             _dbContext = dbContext;
         }
 
-        // Atenção: confirme o nome da tabela (Produto) e da coluna (CodProduto)
-        // de acordo com o esquema do banco de dados da instalação.
         public async Task<bool> ExistsAsync(int idProduct)
         {
             var count = await _dbContext.Database
-                .SqlQuery<int>($"SELECT CAST(COUNT(1) AS INT) FROM Produto WHERE CodProduto = {idProduct}")
+                .SqlQuery<int>($"SELECT CAST(COUNT(1) AS INT) AS Value FROM Produtos WHERE CodProduto = {idProduct}")
                 .FirstOrDefaultAsync();
 
             return count > 0;

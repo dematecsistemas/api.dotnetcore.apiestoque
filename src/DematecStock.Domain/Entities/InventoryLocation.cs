@@ -12,10 +12,10 @@ namespace DematecStock.Domain.Entities
         public int IdProduct { get; set; }
 
         [Column("Referencia")]
-        public string Reference { get; set; } = string.Empty;
+        public string? Reference { get; set; }
 
         [Column("DataCadastro")]
-        public DateTime CreatedDate { get; set; }
+        public DateTime? CreatedDate { get; set; }
 
         [Column("SaldoEstoque")]
         public decimal OnHandQuantity { get; private set; }
