@@ -2,7 +2,7 @@
 using DematecStock.Domain.Repositories;
 using DematecStock.Domain.Repositories.InventoryLocation;
 using DematecStock.Domain.Repositories.InventoryMovement;
-using DematecStock.Domain.Repositories.PorductSearch;
+using DematecStock.Domain.Repositories.ProductSearch;
 using DematecStock.Domain.Repositories.Product;
 using DematecStock.Domain.Repositories.ProductAddress;
 using DematecStock.Domain.Repositories.Users;
@@ -26,7 +26,7 @@ namespace DematecStock.Infrastructure
             AddToken(services, configuration);
             AddRepositories(services);
 
-            services.AddScoped<IPasswordEncripter, Security.Cryptography.BCrypt>();
+            services.AddScoped<IPasswordEncrypter, Security.Cryptography.BCrypt>();
         }
 
         private static void AddToken(IServiceCollection services, IConfiguration configuration)

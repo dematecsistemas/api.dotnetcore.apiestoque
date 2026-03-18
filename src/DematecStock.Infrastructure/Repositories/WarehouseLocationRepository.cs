@@ -19,9 +19,30 @@ namespace DematecStock.Infrastructure.Repositories
             await _dbContext.WarehouseLocations.AddAsync(location);
         }
 
-        public async Task<List<WarehouseLocations>> GetAllWarehouseLocations()
+        public async Task<List<WarehouseLocations>> GetAllWarehouseLocations(string? isActive, string? isMovementAllowed, string? isAllowReplenishment, string? isPickingLocation)
         {
-            return await _dbContext.WarehouseLocations.AsNoTracking().ToListAsync();
+            var query = _dbContext.WarehouseLocations.AsNoTracking();
+
+            if (!string.IsNullOrWhiteSpace(isActive)) query = query.Where(l => l.IsActive == isActive);
+            if (!string.IsNullOrWhiteSpace(isMovementAllowed)) query = query.Where(l => l.IsMovementAllowed == isMovementAllowed);
+            if (!string.IsNullOrWhiteSpace(isAllowReplenishment)) query = query.Where(l => l.IsAllowReplenishment == isAllowReplenishment);
+            if (!string.IsNullOrWhiteSpace(isPickingLocation)) query = query.Where(l => l.IsPickingLocation == isPickingLocation);
+
+            return await query.ToListAsync();
+        }
+
+        public async Task<List<WarehouseLocations>> GetByLocationNameQuery(string query, string? isActive, string? isMovementAllowed, string? isAllowReplenishment, string? isPickingLocation)
+        {
+            var q = _dbContext.WarehouseLocations
+                .AsNoTracking()
+                .Where(l => l.LocationName.Contains(query));
+
+            if (!string.IsNullOrWhiteSpace(isActive)) q = q.Where(l => l.IsActive == isActive);
+            if (!string.IsNullOrWhiteSpace(isMovementAllowed)) q = q.Where(l => l.IsMovementAllowed == isMovementAllowed);
+            if (!string.IsNullOrWhiteSpace(isAllowReplenishment)) q = q.Where(l => l.IsAllowReplenishment == isAllowReplenishment);
+            if (!string.IsNullOrWhiteSpace(isPickingLocation)) q = q.Where(l => l.IsPickingLocation == isPickingLocation);
+
+            return await q.ToListAsync();
         }
 
         public async Task<WarehouseLocations?> GetById(int id)

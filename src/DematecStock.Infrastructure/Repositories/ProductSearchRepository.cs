@@ -1,5 +1,5 @@
 ﻿using DematecStock.Domain.DTOs;
-using DematecStock.Domain.Repositories.PorductSearch;
+using DematecStock.Domain.Repositories.ProductSearch;
 using DematecStock.Infrastructure.DataAccess;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,24 +14,20 @@ namespace DematecStock.Infrastructure.Repositories
             _dbContext = dbContext;
         }
 
-        public async Task<List<ProductSearchQueryResult>> SearchAsync(string? q, int page, int pageSize, CancellationToken ct)
+        public async Task<List<ProductSearchQueryResult>> SearchAsync(string? q, int page, int pageSize, string? isProductInactive, CancellationToken ct)
         {
             page = Math.Max(1, page);
             pageSize = Math.Clamp(pageSize, 1, 200);
 
-            // A procedure atual recebe apenas @q e @take.
-            // Estratégia: busca um conjunto maior e pagina em memória no padrão do projeto.
-            var take = page * pageSize;
-
             var result = await _dbContext.ProductSearch
-                .FromSqlInterpolated($"EXEC dbo.usp_Wms_ProductSearch {q}, {take}")
+                .FromSqlInterpolated($"EXEC dbo.usp_Wms_ProductSearch {q}, {page}, {pageSize}")
                 .AsNoTracking()
                 .ToListAsync(ct);
 
-            return result
-                .Skip((page - 1) * pageSize)
-                .Take(pageSize)
-                .ToList();
+            if (!string.IsNullOrWhiteSpace(isProductInactive))
+                result = result.Where(x => x.IsProductInactive == (isProductInactive == "S")).ToList();
+
+            return result;
         }
     }
 }

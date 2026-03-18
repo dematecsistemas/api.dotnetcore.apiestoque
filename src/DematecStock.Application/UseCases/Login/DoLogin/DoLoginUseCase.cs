@@ -10,16 +10,16 @@ namespace DematecStock.Application.UseCases.Login.DoLogin
     public class DoLoginUseCase : IDoLoginUseCase
     {
         private readonly IUserReadOnlyRepository _userReadOnlyRepository;
-        private readonly IPasswordEncripter _passwordEncripter;
+        private readonly IPasswordEncrypter _passwordEncrypter;
         private readonly IAccessTokenGenerator _accessTokenGenerator;
 
         public DoLoginUseCase(
             IUserReadOnlyRepository userReadOnlyRepository,
-            IPasswordEncripter passwordEncripter, 
+            IPasswordEncrypter passwordEncrypter,
             IAccessTokenGenerator accessTokenGenerator)
         {
             _userReadOnlyRepository = userReadOnlyRepository;
-            _passwordEncripter = passwordEncripter;
+            _passwordEncrypter = passwordEncrypter;
             _accessTokenGenerator = accessTokenGenerator;
         }
 
@@ -39,7 +39,7 @@ namespace DematecStock.Application.UseCases.Login.DoLogin
                 throw new ErrorOnValidationException("O usuário não possui uma senha");
             }
 
-            var passwordMatch = _passwordEncripter.Verify(request.Password, user.AppPassword);
+            var passwordMatch = _passwordEncrypter.Verify(request.Password, user.AppPassword);
 
             if(passwordMatch == false)
             {

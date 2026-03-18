@@ -15,13 +15,12 @@ namespace DematecStock.Application.UseCases.ProductsAddress.GetAllLocationsByPro
             _addressProductReadOnlyRepository = addressProductReadOnlyRepository;
             _mapper = mapper;
         }
-        public async Task<ResponseProductLocations> Execute(int? idProduct, string? reference, string? ean13Code)
+        public async Task<ResponseProductLocations> Execute(int? idProduct, string? reference, string? ean13Code, string? isActive, string? isMovementAllowed, string? isAllowReplenishment, string? isPickingLocation, string? isProductInactive)
         {
-            var locationsProduct = await _addressProductReadOnlyRepository.GetStoredItems(idProduct, reference, ean13Code);
+            var locationsProduct = await _addressProductReadOnlyRepository.GetStoredItems(idProduct, reference, ean13Code, isActive, isMovementAllowed, isAllowReplenishment, isPickingLocation, isProductInactive);
 
             var response = _mapper.Map<ResponseProductLocations>(locationsProduct);
             return response;
-
         }
     }
 

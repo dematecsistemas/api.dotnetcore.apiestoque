@@ -2,7 +2,6 @@
 using DematecStock.Communication.Requests.WarehouseLocations;
 using DematecStock.Domain.Repositories;
 using DematecStock.Domain.Repositories.WarehouseLocations;
-using DocumentFormat.OpenXml.Spreadsheet;
 
 namespace DematecStock.Application.UseCases.WarehouseLocations.CreateLocation
 {

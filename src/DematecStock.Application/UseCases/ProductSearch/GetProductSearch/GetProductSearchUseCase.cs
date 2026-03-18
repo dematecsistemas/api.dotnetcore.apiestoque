@@ -1,5 +1,5 @@
 using DematecStock.Communication.Responses;
-using DematecStock.Domain.Repositories.PorductSearch;
+using DematecStock.Domain.Repositories.ProductSearch;
 
 namespace DematecStock.Application.UseCases.ProductSearch.GetProductSearch
 {
@@ -12,13 +12,13 @@ namespace DematecStock.Application.UseCases.ProductSearch.GetProductSearch
             _repository = repository;
         }
 
-        public async Task<ResponseProductSearchPagedJson> Execute(string? q, int page, int pageSize, CancellationToken ct)
+        public async Task<ResponseProductSearchPagedJson> Execute(string? q, int page, int pageSize, string? isProductInactive, CancellationToken ct)
         {
             page = Math.Max(1, page);
             pageSize = pageSize <= 0 ? 50 : pageSize;
             pageSize = Math.Min(pageSize, 50);
 
-            var rows = await _repository.SearchAsync(q?.Trim(), page, pageSize, ct);
+            var rows = await _repository.SearchAsync(q?.Trim(), page, pageSize, isProductInactive, ct);
 
             return new ResponseProductSearchPagedJson
             {

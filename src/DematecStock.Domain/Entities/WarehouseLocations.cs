@@ -1,5 +1,4 @@
-﻿using DocumentFormat.OpenXml.Wordprocessing;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DematecStock.Domain.Entities
@@ -66,6 +65,8 @@ namespace DematecStock.Domain.Entities
         {
             LocationName = $"R{Aisle}-P{Building}-N{Level}-A{Bin}";
         }
+        protected WarehouseLocations() { }
+
         public WarehouseLocations(int aisle, int building, int level, int bin)
         {
             Aisle = aisle;

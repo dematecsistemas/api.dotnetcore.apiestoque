@@ -16,6 +16,7 @@ namespace DematecStock.Api.Controllers
             [FromQuery] string? q,
             [FromQuery] int page = 1,
             [FromQuery] int pageSize = 20,
+            [FromQuery] string? isProductInactive = null,
             CancellationToken ct = default)
         {
             if (page <= 0)
@@ -24,7 +25,10 @@ namespace DematecStock.Api.Controllers
             if (pageSize <= 0)
                 return BadRequest(new ResponseErrorJson("Tamanho da página deve ser maior que zero."));
 
-            var response = await useCase.Execute(q, page, pageSize, ct);
+            if (isProductInactive is not null && isProductInactive != "S" && isProductInactive != "N")
+                return BadRequest(new ResponseErrorJson("isProductInactive deve ser S ou N."));
+
+            var response = await useCase.Execute(q, page, pageSize, isProductInactive, ct);
             return Ok(response);
         }
     }

@@ -1,7 +1,56 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\docs\\DOCUMENTACAO_COMPLETA_API_DOTNET.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docs\\DOCUMENTACAO_COMPLETA_API_DOTNET.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD91ACD-7877-4362-AB96-06B79A3840BC}|src\\DematecStock.Domain\\DematecStock.Domain.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\src\\dematecstock.domain\\entities\\warehouselocations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD91ACD-7877-4362-AB96-06B79A3840BC}|src\\DematecStock.Domain\\DematecStock.Domain.csproj|solutionrelative:src\\dematecstock.domain\\entities\\warehouselocations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{826A9EBE-7F5F-4600-9401-0A6EAF8A0FE1}|src\\DematecStock.Application\\DematecStock.Application.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\src\\dematecstock.application\\usecases\\warehouselocations\\createlocation\\createlocationusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{826A9EBE-7F5F-4600-9401-0A6EAF8A0FE1}|src\\DematecStock.Application\\DematecStock.Application.csproj|solutionrelative:src\\dematecstock.application\\usecases\\warehouselocations\\createlocation\\createlocationusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD91ACD-7877-4362-AB96-06B79A3840BC}|src\\DematecStock.Domain\\DematecStock.Domain.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\src\\dematecstock.domain\\repositories\\productsearch\\iproductsearchreadonlyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD91ACD-7877-4362-AB96-06B79A3840BC}|src\\DematecStock.Domain\\DematecStock.Domain.csproj|solutionrelative:src\\dematecstock.domain\\repositories\\productsearch\\iproductsearchreadonlyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{826A9EBE-7F5F-4600-9401-0A6EAF8A0FE1}|src\\DematecStock.Application\\DematecStock.Application.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\src\\dematecstock.application\\usecases\\productsearch\\getproductsearch\\getproductsearchusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{826A9EBE-7F5F-4600-9401-0A6EAF8A0FE1}|src\\DematecStock.Application\\DematecStock.Application.csproj|solutionrelative:src\\dematecstock.application\\usecases\\productsearch\\getproductsearch\\getproductsearchusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F1FA4BE-E1FA-4322-85E5-D7ACD4026115}|src\\DematecStock.Infrastructure\\DematecStock.Infrastructure.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\src\\dematecstock.infrastructure\\repositories\\productsearchrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F1FA4BE-E1FA-4322-85E5-D7ACD4026115}|src\\DematecStock.Infrastructure\\DematecStock.Infrastructure.csproj|solutionrelative:src\\dematecstock.infrastructure\\repositories\\productsearchrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3A9C778-AD8B-472A-89DA-21E97100CF01}|tests\\DematecStock.Tests\\DematecStock.Tests.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\tests\\dematecstock.tests\\usecases\\productsearch\\getproductsearchusecasetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3A9C778-AD8B-472A-89DA-21E97100CF01}|tests\\DematecStock.Tests\\DematecStock.Tests.csproj|solutionrelative:tests\\dematecstock.tests\\usecases\\productsearch\\getproductsearchusecasetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F1FA4BE-E1FA-4322-85E5-D7ACD4026115}|src\\DematecStock.Infrastructure\\DematecStock.Infrastructure.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\src\\dematecstock.infrastructure\\dependencyinjectionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F1FA4BE-E1FA-4322-85E5-D7ACD4026115}|src\\DematecStock.Infrastructure\\DematecStock.Infrastructure.csproj|solutionrelative:src\\dematecstock.infrastructure\\dependencyinjectionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD91ACD-7877-4362-AB96-06B79A3840BC}|src\\DematecStock.Domain\\DematecStock.Domain.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\src\\dematecstock.domain\\security\\cryptography\\ipasswordencrypter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD91ACD-7877-4362-AB96-06B79A3840BC}|src\\DematecStock.Domain\\DematecStock.Domain.csproj|solutionrelative:src\\dematecstock.domain\\security\\cryptography\\ipasswordencrypter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F1FA4BE-E1FA-4322-85E5-D7ACD4026115}|src\\DematecStock.Infrastructure\\DematecStock.Infrastructure.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\src\\dematecstock.infrastructure\\security\\cryptography\\bcrypt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F1FA4BE-E1FA-4322-85E5-D7ACD4026115}|src\\DematecStock.Infrastructure\\DematecStock.Infrastructure.csproj|solutionrelative:src\\dematecstock.infrastructure\\security\\cryptography\\bcrypt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{826A9EBE-7F5F-4600-9401-0A6EAF8A0FE1}|src\\DematecStock.Application\\DematecStock.Application.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\src\\dematecstock.application\\usecases\\login\\dologin\\dologinusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{826A9EBE-7F5F-4600-9401-0A6EAF8A0FE1}|src\\DematecStock.Application\\DematecStock.Application.csproj|solutionrelative:src\\dematecstock.application\\usecases\\login\\dologin\\dologinusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3A9C778-AD8B-472A-89DA-21E97100CF01}|tests\\DematecStock.Tests\\DematecStock.Tests.csproj|c:\\desenvolvimento\\dotnet\\dematec\\dematecstock\\tests\\dematecstock.tests\\usecases\\login\\dologinusecasetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3A9C778-AD8B-472A-89DA-21E97100CF01}|tests\\DematecStock.Tests\\DematecStock.Tests.csproj|solutionrelative:tests\\dematecstock.tests\\usecases\\login\\dologinusecasetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +58,167 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DoLoginUseCaseTests.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\tests\\DematecStock.Tests\\UseCases\\Login\\DoLoginUseCaseTests.cs",
+              "RelativeDocumentMoniker": "tests\\DematecStock.Tests\\UseCases\\Login\\DoLoginUseCaseTests.cs",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\tests\\DematecStock.Tests\\UseCases\\Login\\DoLoginUseCaseTests.cs",
+              "RelativeToolTip": "tests\\DematecStock.Tests\\UseCases\\Login\\DoLoginUseCaseTests.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T01:17:42.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DoLoginUseCase.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Application\\UseCases\\Login\\DoLogin\\DoLoginUseCase.cs",
+              "RelativeDocumentMoniker": "src\\DematecStock.Application\\UseCases\\Login\\DoLogin\\DoLoginUseCase.cs",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Application\\UseCases\\Login\\DoLogin\\DoLoginUseCase.cs",
+              "RelativeToolTip": "src\\DematecStock.Application\\UseCases\\Login\\DoLogin\\DoLoginUseCase.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T01:17:42.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BCrypt.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Infrastructure\\Security\\Cryptography\\BCrypt.cs",
+              "RelativeDocumentMoniker": "src\\DematecStock.Infrastructure\\Security\\Cryptography\\BCrypt.cs",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Infrastructure\\Security\\Cryptography\\BCrypt.cs",
+              "RelativeToolTip": "src\\DematecStock.Infrastructure\\Security\\Cryptography\\BCrypt.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAEBSwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T01:17:42.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IPasswordEncrypter.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Domain\\Security\\Cryptography\\IPasswordEncrypter.cs",
+              "RelativeDocumentMoniker": "src\\DematecStock.Domain\\Security\\Cryptography\\IPasswordEncrypter.cs",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Domain\\Security\\Cryptography\\IPasswordEncrypter.cs",
+              "RelativeToolTip": "src\\DematecStock.Domain\\Security\\Cryptography\\IPasswordEncrypter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAABOwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T01:17:42.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DependencyInjectionExtension.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Infrastructure\\DependencyInjectionExtension.cs",
+              "RelativeDocumentMoniker": "src\\DematecStock.Infrastructure\\DependencyInjectionExtension.cs",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Infrastructure\\DependencyInjectionExtension.cs",
+              "RelativeToolTip": "src\\DematecStock.Infrastructure\\DependencyInjectionExtension.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAABRwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T01:17:42.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GetProductSearchUseCaseTests.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\tests\\DematecStock.Tests\\UseCases\\ProductSearch\\GetProductSearchUseCaseTests.cs",
+              "RelativeDocumentMoniker": "tests\\DematecStock.Tests\\UseCases\\ProductSearch\\GetProductSearchUseCaseTests.cs",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\tests\\DematecStock.Tests\\UseCases\\ProductSearch\\GetProductSearchUseCaseTests.cs",
+              "RelativeToolTip": "tests\\DematecStock.Tests\\UseCases\\ProductSearch\\GetProductSearchUseCaseTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T01:17:42.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductSearchRepository.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Infrastructure\\Repositories\\ProductSearchRepository.cs",
+              "RelativeDocumentMoniker": "src\\DematecStock.Infrastructure\\Repositories\\ProductSearchRepository.cs",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Infrastructure\\Repositories\\ProductSearchRepository.cs",
+              "RelativeToolTip": "src\\DematecStock.Infrastructure\\Repositories\\ProductSearchRepository.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAA+wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T01:17:41.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetProductSearchUseCase.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Application\\UseCases\\ProductSearch\\GetProductSearch\\GetProductSearchUseCase.cs",
+              "RelativeDocumentMoniker": "src\\DematecStock.Application\\UseCases\\ProductSearch\\GetProductSearch\\GetProductSearchUseCase.cs",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Application\\UseCases\\ProductSearch\\GetProductSearch\\GetProductSearchUseCase.cs",
+              "RelativeToolTip": "src\\DematecStock.Application\\UseCases\\ProductSearch\\GetProductSearch\\GetProductSearchUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T01:17:41.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IProductSearchReadOnlyRepository.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Domain\\Repositories\\ProductSearch\\IProductSearchReadOnlyRepository.cs",
+              "RelativeDocumentMoniker": "src\\DematecStock.Domain\\Repositories\\ProductSearch\\IProductSearchReadOnlyRepository.cs",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Domain\\Repositories\\ProductSearch\\IProductSearchReadOnlyRepository.cs",
+              "RelativeToolTip": "src\\DematecStock.Domain\\Repositories\\ProductSearch\\IProductSearchReadOnlyRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBHwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T01:17:41.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateLocationUseCase.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Application\\UseCases\\WarehouseLocations\\CreateLocation\\CreateLocationUseCase.cs",
+              "RelativeDocumentMoniker": "src\\DematecStock.Application\\UseCases\\WarehouseLocations\\CreateLocation\\CreateLocationUseCase.cs",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Application\\UseCases\\WarehouseLocations\\CreateLocation\\CreateLocationUseCase.cs",
+              "RelativeToolTip": "src\\DematecStock.Application\\UseCases\\WarehouseLocations\\CreateLocation\\CreateLocationUseCase.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T01:17:41.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WarehouseLocations.cs",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Domain\\Entities\\WarehouseLocations.cs",
+              "RelativeDocumentMoniker": "src\\DematecStock.Domain\\Entities\\WarehouseLocations.cs",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\src\\DematecStock.Domain\\Entities\\WarehouseLocations.cs",
+              "RelativeToolTip": "src\\DematecStock.Domain\\Entities\\WarehouseLocations.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T01:17:41.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DOCUMENTACAO_COMPLETA_API_DOTNET.md",
+              "DocumentMoniker": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\docs\\DOCUMENTACAO_COMPLETA_API_DOTNET.md",
+              "RelativeDocumentMoniker": "docs\\DOCUMENTACAO_COMPLETA_API_DOTNET.md",
+              "ToolTip": "C:\\Desenvolvimento\\DotNet\\DEMATEC\\DematecStock\\docs\\DOCUMENTACAO_COMPLETA_API_DOTNET.md",
+              "RelativeToolTip": "docs\\DOCUMENTACAO_COMPLETA_API_DOTNET.md",
+              "ViewState": "AgIAAAoEAAAAAAAAAAAkwBIGAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-03-17T01:00:50.877Z",
+              "EditorCaption": ""
             }
           ]
         }

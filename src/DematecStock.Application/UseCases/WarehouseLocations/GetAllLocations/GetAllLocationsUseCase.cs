@@ -15,9 +15,9 @@ namespace DematecStock.Application.UseCases.WarehouseLocations.GetAllLocations
             _mapper = mapper;
             
         }
-        public async Task<List<ResponseLocationsJson>> Execute()
+        public async Task<List<ResponseLocationsJson>> Execute(string? isActive, string? isMovementAllowed, string? isAllowReplenishment, string? isPickingLocation)
         {
-            var locations = await _repository.GetAllWarehouseLocations();
+            var locations = await _repository.GetAllWarehouseLocations(isActive, isMovementAllowed, isAllowReplenishment, isPickingLocation);
 
             var locationsResponse = _mapper.Map<List<ResponseLocationsJson>>(locations);
 
