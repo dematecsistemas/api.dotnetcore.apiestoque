@@ -15,9 +15,9 @@ namespace DematecStock.Application.UseCases.ProductsAddress.GetAllStorageProduct
             _mapper = mapper;
         }
 
-        public async Task<ResponseLocationProduct> Execute(int idLocation, string? isActive, string? isMovementAllowed, string? isAllowReplenishment, string? isPickingLocation, string? isProductInactive)
+        public async Task<ResponseLocationProduct> Execute(int idLocation, string? isProductInactive)
         {
-            var productsLocation = await _productAddressReadOnlyRepository.GetStoredItemsByLocation(idLocation, isActive, isMovementAllowed, isAllowReplenishment, isPickingLocation, isProductInactive);
+            var productsLocation = await _productAddressReadOnlyRepository.GetStoredItemsByLocation(idLocation, isProductInactive);
 
             var response = _mapper.Map<ResponseLocationProduct>(productsLocation);
             return response;

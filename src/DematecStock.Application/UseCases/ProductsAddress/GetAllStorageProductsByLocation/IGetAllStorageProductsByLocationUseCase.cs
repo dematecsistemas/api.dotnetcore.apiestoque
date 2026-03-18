@@ -4,6 +4,6 @@ namespace DematecStock.Application.UseCases.ProductsAddress.GetAllStorageProduct
 {
     public interface IGetAllStorageProductsByLocationUseCase
     {
-        Task<ResponseLocationProduct> Execute(int idLocation, string? isActive, string? isMovementAllowed, string? isAllowReplenishment, string? isPickingLocation, string? isProductInactive);
+        Task<ResponseLocationProduct> Execute(int idLocation, string? isProductInactive);
     }
 }

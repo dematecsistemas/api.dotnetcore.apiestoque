@@ -34,10 +34,14 @@ namespace DematecStock.Infrastructure.Repositories
 			return query;
 		}
 
-		public async Task<LocationQueryResult> GetStoredItemsByLocation(int idLocation, string? isActive, string? isMovementAllowed, string? isAllowReplenishment, string? isPickingLocation, string? isProductInactive)
-		{            
-			var productsStored = await ApplyFilters(BaseQuery().Where(x => x.IdLocation == idLocation), isActive, isMovementAllowed, isAllowReplenishment, isPickingLocation, isProductInactive)
-				.ToListAsync();
+		public async Task<LocationQueryResult> GetStoredItemsByLocation(int idLocation, string? isProductInactive)
+		{
+			var baseQuery = BaseQuery().Where(x => x.IdLocation == idLocation);
+
+			if (!string.IsNullOrWhiteSpace(isProductInactive))
+				baseQuery = baseQuery.Where(x => x.IsProductInactive == (isProductInactive == "S"));
+
+			var productsStored = await baseQuery.ToListAsync();
 
 			if (!productsStored.Any())
 			{

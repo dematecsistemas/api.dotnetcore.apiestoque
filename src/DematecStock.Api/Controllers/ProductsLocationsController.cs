@@ -20,19 +20,11 @@ namespace DematecStock.Api.Controllers
         public async Task<IActionResult> GetStoregeProductsByLocation(
         [FromServices] IGetAllStorageProductsByLocationUseCase getAllStorageProductsByLocationUseCase,
         [FromRoute] int idLocation,
-        [FromQuery] string? isActive,
-        [FromQuery] string? isMovementAllowed,
-        [FromQuery] string? isAllowReplenishment,
-        [FromQuery] string? isPickingLocation,
         [FromQuery] string? isProductInactive)
         {
-            if (IsInvalidSN(isActive)) return BadRequest(new ResponseErrorJson("isActive deve ser S ou N."));
-            if (IsInvalidSN(isMovementAllowed)) return BadRequest(new ResponseErrorJson("isMovementAllowed deve ser S ou N."));
-            if (IsInvalidSN(isAllowReplenishment)) return BadRequest(new ResponseErrorJson("isAllowReplenishment deve ser S ou N."));
-            if (IsInvalidSN(isPickingLocation)) return BadRequest(new ResponseErrorJson("isPickingLocation deve ser S ou N."));
             if (IsInvalidSN(isProductInactive)) return BadRequest(new ResponseErrorJson("isProductInactive deve ser S ou N."));
 
-            var locationWithStoregeProduct = await getAllStorageProductsByLocationUseCase.Execute(idLocation, isActive, isMovementAllowed, isAllowReplenishment, isPickingLocation, isProductInactive);
+            var locationWithStoregeProduct = await getAllStorageProductsByLocationUseCase.Execute(idLocation, isProductInactive);
 
             return Ok(locationWithStoregeProduct);
         }
