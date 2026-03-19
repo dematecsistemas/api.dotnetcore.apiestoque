@@ -20,14 +20,17 @@ namespace DematecStock.Infrastructure.Repositories
             pageSize = Math.Clamp(pageSize, 1, 200);
 
             var result = await _dbContext.ProductSearch
-                .FromSqlInterpolated($"EXEC dbo.usp_Wms_ProductSearch {q}, {page}, {pageSize}")
+                .FromSqlInterpolated($"EXEC dbo.usp_Wms_ProductSearch {q}")
                 .AsNoTracking()
                 .ToListAsync(ct);
 
             if (!string.IsNullOrWhiteSpace(isProductInactive))
                 result = result.Where(x => x.IsProductInactive == (isProductInactive == "S")).ToList();
 
-            return result;
+            return result
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
         }
     }
 }
